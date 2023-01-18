@@ -71,3 +71,10 @@
         // 2nd = top
         // 3rd = right
         // 4th = bottom
+
+// 1/18 demo vids
+    // let is for variables that get reassigned
+    // install Node & NPM
+    // want Node package ESLint
+    // QUESTION! dev set up vid min 10:20 did I install eslint correctly????
+    
