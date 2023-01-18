@@ -45,3 +45,8 @@
             // use === for equality checking 
             // only two == is more "loose"
         // >= greater than or equal to
+    // else (if thats not true)
+    // else if 
+
+// p5js
+// 
