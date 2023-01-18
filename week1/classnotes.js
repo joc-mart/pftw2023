@@ -48,5 +48,7 @@
     // else (if thats not true)
     // else if 
 
-// p5js
-// 
+// p5js.org
+    // best source for how to use p5.js
+    // CDN link
+    // when use CDN source put script tag within head
