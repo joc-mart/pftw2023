@@ -67,14 +67,23 @@
    
     // rect = create a rectangle
     // (100, 100, 200, 200) is an argument
-        // 1st argument = left
-        // 2nd = top
-        // 3rd = right
-        // 4th = bottom
+        // first and second set the location and the second two are width and height?
 
 // 1/18 demo vids
     // let is for variables that get reassigned
     // install Node & NPM
     // want Node package ESLint
     // QUESTION! dev set up vid min 10:20 did I install eslint correctly????
+// getting started
+    // drawing part of an ellipse
+        // 1st and 2nd parameters set location
+        // 3rd and 4th set width and height
+        // 5th parameter sets the angle to start the arc
+        // 6th parameter sets the angle to stop
+        // angles are set in radians
+        // PI = 180 degrees
+        // QUARTER_PI = 45 
+        // HALF_PI = 90
+        // TWO_PI = 360
+
     
