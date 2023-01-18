@@ -85,5 +85,8 @@
         // QUARTER_PI = 45 
         // HALF_PI = 90
         // TWO_PI = 360
+    // can convert to degrees from radians using angleMode(DEGREES) in function setup
 
+    // the shape that comes first will be on the bottom
+    // 
     
