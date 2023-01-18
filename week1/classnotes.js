@@ -22,6 +22,7 @@
     // a space is also considered a string " " + myGithub
 
 // use consol logs for debugging
+// tells us what is happening in our script
 
 // window.alert(); will open a modal display whatever is in parentheses
     // window.prompt converts everything to strings
@@ -51,4 +52,22 @@
 // p5js.org
     // best source for how to use p5.js
     // CDN link
-    // when use CDN source put script tag within head
+    // when use CDN source put script tag within head (link to your script file in bottom of body)
+    
+    //function setup - defining or creating your own action
+    /* function setup() {
+        createCanvas(400, 400);
+        background(0);
+    }
+
+    function draw() {
+        rect(100, 100, 200, 200);
+    }
+    */
+   
+    // rect = create a rectangle
+    // (100, 100, 200, 200) is an argument
+        // 1st argument = left
+        // 2nd = top
+        // 3rd = right
+        // 4th = bottom
