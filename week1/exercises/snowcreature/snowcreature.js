@@ -7,7 +7,7 @@ function setup() {
     grid = loadImage("100px_grid.png");
 }
 function draw() {
-    background(grid);
+    // background(grid);
     // snowman legs
     fill("#e6f3f8");
     stroke(stroke1);
@@ -56,5 +56,28 @@ function draw() {
     ellipse(200, 300, 50);
     ellipse(200, 270, 40);
     ellipse(200, 240, 30);
+    // 3rd
+    ellipse(300, 100, 50);
+    ellipse(300, 70, 40);
+    ellipse(300, 40, 30);
+    // 4th
+    ellipse(700, 200, 50);
+    ellipse(700, 170, 40);
+    ellipse(700, 140, 30);
+    // 5th
+    ellipse(800, 100, 50);
+    ellipse(800, 70, 40);
+    ellipse(800, 40, 30);
+    // 6th
+    ellipse(900, 300, 50);
+    ellipse(900, 270, 40);
+    ellipse(900, 240, 30);
 
-}
+    if (mouseIsPressed) {
+        fill(color("#800000"));
+    } else {
+        fill(color("red"));
+    }
+    noStroke();
+    ellipse(mouseX, mouseY, 80, 80);
+ }
