@@ -90,5 +90,12 @@
     // the shape that comes first will be on the bottom
     // 
     
-    // QUESTION
-    // p5 snippets extension didnd't work / what does it do?
+    // QUESTIONS for sat
+    // p5 snippets extension didnd't work / what does it do? -- its p5js snippets
+    // dev set up vid min 10:20 did I install eslint correctly???? what is eslint?
+    
+    // eslint gives indicators of errors for javascript for debugging
+    // set up rc file in project folder
+    // we will set it up week 3
+
+    // 
