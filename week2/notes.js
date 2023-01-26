@@ -139,3 +139,8 @@
 
     // toString()
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString
+
+
+    // https://www.w3schools.com/js/js_objects.asp
+
+    
