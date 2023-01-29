@@ -19,9 +19,15 @@ var questions = [
         answer: "The Great Barrier Reef"
     },
     {
-        
+        question: "What is the deepest known area of the Earth's oceans?",
+        answer: "The Mariana Trench"
+    },
+    {
+        question: "About what percent of the Earth's surface is ocean?",
+        answer: "70%"
     }
 ]
+
 
 
 
