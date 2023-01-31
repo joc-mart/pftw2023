@@ -94,8 +94,7 @@
     console.log(mergedBike);
     // if there is a repeated property, the one that came last (color) takes precedence
 
-
-//Example program
+//Example program 1:12
     // program: ask a random question
     const questions = [
         { question: "red + blue", answer: "purple" },
@@ -144,3 +143,11 @@
     // https://www.w3schools.com/js/js_objects.asp
 
     
+
+    // Vid demo: arrays
+        // array is a variable that has multiple slots
+        let myArr = ["bob", "duca", "soup"];
+        console.log(myArr);
+        // arrays start at 0
+        let myOtherArray = new Array();
+        console.log(myOtherArray);
