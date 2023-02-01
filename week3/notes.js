@@ -108,23 +108,12 @@ console.log(myNum); // becomes an empty array
 // p5 dom inputs and buttons
 // multiple cdn links?
 
+// 1/31 Tues Class
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// array is [] square brackets
+// object is {} curly brackets
+// method
+// DRY: use functions so you don't repeat yourself
 
 
 // **********QUESTIONS*******************
