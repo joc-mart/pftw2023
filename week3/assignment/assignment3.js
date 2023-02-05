@@ -29,6 +29,10 @@ function makeArm(rotateBy) {
     stroke("#FF45D6");
     quad(138, 131, 186, 120, 169, 163, 130, 176);
 
+    noFill();
+    stroke("#32CD32");
+    rect(130, 120, 155, 155);
+
 }
 
 function draw() {
