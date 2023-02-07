@@ -45,3 +45,8 @@ function mousePressed() {
 
 // can use variables and change position += #
 
+/* if(squareYPosition > height) {
+    squareYPosition = 0; // or noLoop();
+}
+*/ 
+// restarts square at the top
