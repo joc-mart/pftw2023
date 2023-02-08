@@ -32,7 +32,7 @@ function mousePressed() {
 function draw () {
     fill(255);
     circle(startX, 100, 50);
-    startX++;
+    //startX++;
 }
 
 function mousePressed () {
