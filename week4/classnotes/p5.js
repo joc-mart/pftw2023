@@ -1,4 +1,6 @@
 let startX = 100;
+let diameter = 100;
+let gap = 50;
 
 function setup () {
     createCanvas(800, 800);
@@ -28,7 +30,7 @@ function mousePressed() {
     }
 }
 */
-
+/*
 function draw () {
     background("blue")
     fill(255);
@@ -43,7 +45,18 @@ function mousePressed () {
     }
 }
 //  didn't work below circle? it said I clicked it when I didn't
+*/
 
+function draw () {
+    background("blue");
+    for (let i = 100; i < 600; i += 150) {
+        rect(i, 400, 100, 100);
+    }
+}
+
+function mousePressed() {
+
+}
 
 
 
