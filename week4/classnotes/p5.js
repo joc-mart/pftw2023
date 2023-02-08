@@ -2,7 +2,7 @@ let startX = 100;
 
 function setup () {
     createCanvas(800, 800);
-    background("blue");
+    // background("blue");
 }
 /*
 function draw () {
@@ -30,9 +30,10 @@ function mousePressed() {
 */
 
 function draw () {
+    background("blue")
     fill(255);
     circle(startX, 100, 50);
-    //startX++;
+    startX++;
 }
 
 function mousePressed () {
