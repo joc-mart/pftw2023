@@ -28,7 +28,7 @@ function draw () {
 }
 
 function mousePressed () {
-    if((mouseX >= 0 && rectX <= (rectX + rectWidth)) && (mouseY >= rectY && mouseY <= (rectY + rectHeight))) {
+    if((mouseX >= 0 && mouseX <= (rectX + rectWidth)) && (mouseY >= rectY && mouseY <= (rectY + rectHeight))) {
         clickCount++;
         console.log("hit", clickCount);
     }
