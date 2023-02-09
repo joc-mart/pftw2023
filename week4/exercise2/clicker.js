@@ -5,20 +5,22 @@ let rectHeight = 75;
 
 let clickCount = 0
 let speed;
+let color = ["#CBC5EA", "#73628A", "#8A627C", "#628A6A"];
 
 function setup () {
-    createCanvas(500, 500);
+    createCanvas(500, 500); 
     rectY = random(height - rectHeight);
     speed = random(1, 3); // 1 is min, 3 is max
+    color = random(color);
 }
 
 function draw () {
-    background(155);
+    background("#313D5A");
     drawShape();
     rectX += speed;
     if(rectX > width) {
         noLoop();
-        text("your score was " + clickCount, 100, 300);
+        text("your score was " + clickCount, 200, 250);
     }
 }
 
@@ -32,9 +34,7 @@ function mousePressed () {
 // why does it still say hit when its clicking left or righ of square?
 
 function drawShape () {
-    fill("purple");
+    fill(color);
     rect(rectX, rectY, rectWidth, rectHeight);
 
 }
-
-// random method
