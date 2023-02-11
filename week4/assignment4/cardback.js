@@ -33,13 +33,14 @@ function createTile(originX) {
 function draw () {
     //background("green");
     for (let i = 50; i < 800; i += 150) {
-        rect(i, 200, 100, 150);
+       // rect(i, 200, 100, 150);
     }
     
 
-    createTile(50, 200, "#4254F5", "#78DECE", "#FAF79C", "#FAF79C", "#FA87EB");
-    createTile(150, 200, "#4254F5", "#78DECE", "#FAF79C", "#FAF79C", "#FA87EB");
-    createTile(150, 200, "#4254F5", "#78DECE", "#FAF79C", "#FAF79C", "#FA87EB");
-    createTile(150, 200, "#4254F5", "#78DECE", "#FAF79C", "#FAF79C", "#FA87EB");
-    createTile(150, 200, "#4254F5", "#78DECE", "#FAF79C", "#FAF79C", "#FA87EB");
+    createTile(50, 200);
+    createTile(150, 200);
+    createTile(150, 200);
+    createTile(150, 200);
+    createTile(150, 200);
+
 }
