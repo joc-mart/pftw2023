@@ -51,6 +51,7 @@ console.log(myWhiteMouse.weight);
 myWhiteMouse.bump();
 */
 
+/*
 let startDotLocation = 50;
 function setup() {
     createCanvas(1000, 800);
@@ -82,3 +83,59 @@ class Dot {
 }
 
 // why use this?
+*/
+
+/////////////////////////////////////////
+// QUIZ : 20 questions
+// const cars = [] use arrays
+// array example: array of objects
+const cars = [
+    {
+        owner: "jocelyn",
+        color: "black",
+        make: "subaru",
+        model: "xv crosstrek",
+        trim: "maroon",
+        engine: "4 cylinder"
+    },
+    {
+        owner: "ken",
+        color: "black",
+        make: "nissan",
+        model: "juke",
+        trim: "red",
+        engine: "4 cylinder"
+    }
+]
+// add item with push
+cars.push ({
+    owner: "yoshi",
+    color: "green",
+    make: "nintendo",
+    model: "mushroom",
+    trim: "red",
+    engine: "idk"
+})
+// remove item from array !!!
+
+console.log(cars);
+
+// objects
+// classes aren't on the quiz
+// find kens car // create a loop
+/*
+for (let i = 0; i < cars.length; i++) {
+    if(cars[i].owner === "ken"){
+        console.log(cars[i].color);
+    }
+
+}
+*/
+/*
+let age = 16; // asignment operator
+if (age === 16); // equality operator
+*/
+// remember how conditions work
+// remember how a push works
+// what a function does, how to create it
+// can use notes, one attempt
