@@ -9,6 +9,7 @@ function setup() {
 
 function draw() {
     background(0);
+    
     bubble1.move();
     bubble1.show();
 
@@ -19,21 +20,24 @@ function draw() {
 
 class Bubble {
     constructor() {
-        this.x = 200;
-        this.y = 150;
+        this.x = 300;
+        this.y = 200;
     }
     move() {
-        this.x = this.x + random(-5, 5);
-        this.y = this.y + random(-5, 5);
+        this.x += random(-3, 3);
+        this.y += random(-3, 3);
     }
+    
     show() {
-        stroke(255);
-        strokeWeight(4);
+        stroke(135, 18, 252);
+        strokeWeight(10);
         noFill();
-        ellipse(this.x, this.y, 24, 24);
+        //ellipse(this.x, this.y, 24, 24);
+        rect(this.x, this.y, 40, 40);
     }
 }
 
 
 // "new" creates object instance
-// cmd + k + c to comment out multiple lines
+// cmd + k + c to comment out multiple lines and cmd + k + u to uncomment
+// demo didn't use for loop?
