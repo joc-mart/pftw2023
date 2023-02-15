@@ -3,14 +3,14 @@ let bubble2;
 
 function setup() {
     createCanvas(600, 400);
-    bubble1 = new Bubble();
+    bubble1 = new Bubble();    // "new" creates object instance
     bubble2 = new Bubble();
 }
 
 function draw() {
     background(0);
     
-    bubble1.move();
+    bubble1.move();    // demo didn't use for loop?
     bubble1.show();
 
     bubble2.move();
@@ -38,6 +38,3 @@ class Bubble {
 }
 
 
-// "new" creates object instance
-// cmd + k + c to comment out multiple lines and cmd + k + u to uncomment
-// demo didn't use for loop?
