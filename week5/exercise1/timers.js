@@ -13,10 +13,10 @@ function setup () {
 
 function drawBlock (x, y, color) {
     fill(color || 3, 90, 252); // || means or
-    rect(x, y, 50, 50);
+    rect(x, y, 100, 100);
 }
 
-function keyTyped () {
+function keyTyped () { // keyTyped (key) vs keyPressed (keyCode)
     let keyToNumber = Number(key);
     if (isNaN(keyToNumber)){
         return;
@@ -33,15 +33,11 @@ drawTimer = window.setInterval(() => {
         blockY += distance;
     } else {
         blockY = 0;
-        blockX += 50;
+        blockX += 100;
     }
-    if (blockY - 50 < height && blockX - 50 > width) {
+    if (blockY >= height && blockX >= width) { // not sure what would be better here
         window.clearInterval(drawTimer);
-        console.log("done");
+        alert("done");
         // clears timer
     }
 }, speed);
-// went one past
-// keyTyped (key) vs keyPressed (keyCode)
-
-// colors 3, 252, 190
