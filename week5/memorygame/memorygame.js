@@ -52,7 +52,7 @@ function draw () {
     if (gameState.numMatched === gameState.totalPairs) {
         fill("#4254F5");
         textSize(64);
-        text("you did it!", 600, 100);
+        text("you did it!", 500, 100);
         noLoop();
     }
     for (let k = 0; k < cards.length; k++) {
