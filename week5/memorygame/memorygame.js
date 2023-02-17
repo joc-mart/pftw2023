@@ -12,6 +12,7 @@ const gameState = {
 }
 let cardfaceArray = [];
 let cardBack;
+let bg;
 
 function preload() {
     cardBack = loadImage("images/cardbackimg.png");
