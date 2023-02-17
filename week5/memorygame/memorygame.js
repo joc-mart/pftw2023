@@ -1,6 +1,6 @@
 const DOWN = "down";
 const UP = "up";
-let startingX = 200;
+let startingX = 300;
 let startingY = 200;
 let cards = [];
 const gameState = {
@@ -24,8 +24,8 @@ function preload() {
 }
 
 function setup () {
-    createCanvas(1000, 800);
-    background(0);
+    bg = loadImage("images/savannah.jpg");
+    createCanvas(1000, 598);
     let selectedFaces = [];
     for (let z = 0; z < 4; z++) {
         const randomIdx = floor(random(cardfaceArray.length));
@@ -43,16 +43,16 @@ function setup () {
             startingX += 150;
         }
         startingY += 200;
-        startingX = 200;
+        startingX = 300;
     }
 }
 
 function draw () {
-    //background(0);
+    background(bg);
     if (gameState.numMatched === gameState.totalPairs) {
-        fill("yellow");
+        fill("#4254F5");
         textSize(64);
-        text("you win!", 400, 425);
+        text("you did it!", 600, 100);
         noLoop();
     }
     for (let k = 0; k < cards.length; k++) {
@@ -64,10 +64,11 @@ function draw () {
     noLoop();
     gameState.flippedCards.length = 0;
     gameState.waiting = false;
-    fill(255);
+    fill("#4254F5");
     textSize(36);
-    text("attempts " + gameState.attempts, 100, 500);
-    text("matches " + gameState.numMatched, 100, 450);
+    textFont("Courier New");
+    text("attempts " + gameState.attempts, 50, 75);
+    text("matches " + gameState.numMatched, 50, 125);
 }
 
 function mousePressed() {
