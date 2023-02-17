@@ -1,14 +1,18 @@
-
 const DOWN = "down";
 const UP = "up";
 let startingX = 200;
 let startingY = 200;
 let cards = [];
 const gameState = {
-
+    totalPairs: 4,
+    flippedCards: [],
+    numMatched: 0,
+    attempts: 0,
+    waiting: false
 }
 let cardfaceArray = [];
 let cardBack;
+
 function preload() {
     cardBack = loadImage("images/cardbackimg.png");
     cardfaceArray = [
@@ -43,10 +47,57 @@ function setup () {
     }
 }
 
-function mousePressed() {
+function draw () {
+    //background(0);
+    if (gameState.numMatched === gameState.totalPairs) {
+        fill("yellow");
+        textSize(64);
+        text("you win!", 400, 425);
+        noLoop();
+    }
     for (let k = 0; k < cards.length; k++) {
-        if (cards[k].hit(mouseX, mouseY)) {
+        if(!cards[k].isMatch) { // ! means not
+            cards[k].face = DOWN;
+        }
+        cards[k].show();
+    }
+    noLoop();
+    gameState.flippedCards.length = 0;
+    gameState.waiting = false;
+    fill(255);
+    textSize(36);
+    text("attempts " + gameState.attempts, 100, 500);
+    text("matches " + gameState.numMatched, 100, 450);
+}
+
+function mousePressed() {
+    if (gameState.waiting) {
+        return;
+    }
+    for (let k = 0; k < cards.length; k++) {
+        // first check flipped cards lenght, then trigger flip
+        if (gameState.flippedCards.length < 2 && cards[k].hit(mouseX, mouseY)) {
             console.log("flipped", cards[k]);
+            gameState.flippedCards.push(cards[k]);
+        }
+    }
+    if (gameState.flippedCards.length === 2) {
+        gameState.attempts++;
+        if (gameState.flippedCards[0].cardfaceImg === gameState.flippedCards[1].cardfaceImg) {
+            // if cards match
+            // mark cards as flipped so they don't flip back
+            gameState.flippedCards[0].isMatch = true;
+            gameState.flippedCards[1].isMatch = true;
+            gameState.flippedCards.length = 0; // empty the array
+            // increment the score
+            gameState.numMatched++;
+            loop();
+        } else {
+            gameState.waiting = true;
+            const loopTimeout = window.setTimeout(() => {
+                loop();
+                window.clearTimeout(loopTimeout);
+            }, 1000)
         }
     }
 }
@@ -60,17 +111,18 @@ class Card {
         this.height = 150;
         this.cardfaceImg = cardfaceImg;
         this.face = DOWN;
+        this.isMatch = false;
         this.show(); 
     }
     show () {
-        if (this.face === DOWN) {
-            fill("rgb(57.7%, 9.9%, 9.9%)"); // face down
-            rect(this.x, this.y, this.width, this.height, 5); 
-            image(cardBack, this.x, this.y);
-        } else {
+        if (this.face === UP || this.isMatch) {
             fill("#aaa"); // face up
-            rect(this.x, this.y, this.width, this.height, 5);
+            rect(this.x, this.y, this.width, this.height);
             image(this.cardfaceImg, this.x, this.y); 
+        } else {
+            fill("rgb(57.7%, 9.9%, 9.9%)"); // face down
+            rect(this.x, this.y, this.width, this.height); 
+            image(cardBack, this.x, this.y);
         }
     }
     hit(mouseX, mouseY) {
