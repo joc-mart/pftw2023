@@ -58,6 +58,7 @@ class Card {
     }
     hit(mouseX, mouseY) {
         if ((mouseX >= this.x && mouseX <= (this.x + this.width)) && (mouseY >= this.y && mouseY <= (this.y + this.height))) {
+            this.flip();
             return true;
         } else {
             return false;
