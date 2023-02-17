@@ -1,34 +1,26 @@
-// let startX = 200;
-// let startY = 200;
-// let cards = [];
-// let startingId = 0;
-
-// function setup () {
-//     createCanvas(1000, 800);
-//     background(0);
-//     for (let k = 0; k < 2; k++) {
-//         for (let i = 0; i < 4; i++) {
-//             rect(startX, startY, 100, 150);
-
-            
-//             cards.push({ x: startX, y: startY, id: startingId });
-//             startX += 150;
-//             startingId++;
-//         }
-//         startY += 200;
-//         startX = 200;
-//     }
-//     console.log(cards);
-// }
-
 let myCard;
 const DOWN = "down";
 const UP = "up";
+let startingX = 200;
+let startingY = 200;
+let cards = [];
+const gameState = {
+
+}
 
 function setup () {
     createCanvas(1000, 800);
     background(0);
-    myCard = new Card();
+    for (let j = 0; j < 2; j++) {
+        for (let i = 0; 1 < 5; i++) {
+        cards.push(new Card(startingX, startingY));
+        startingX += 200;
+        console.log(startingX);
+    }
+        startingY += 200;
+        startingX = 200;
+    }
+    
 
 }
 
@@ -38,9 +30,9 @@ function mousePressed() {
 
 
 class Card {
-    constructor () {
-        this.x = 200;
-        this.y = 200;
+    constructor (x, y) {
+        this.x = x;
+        this.y = y;
         this.width = 100;
         this.height = 150;
 
@@ -49,10 +41,10 @@ class Card {
     }
     show () {
         if (this.face === DOWN) {
-            fill("rgb(57.7%, 9.9%, 9.9%)");
+            fill("rgb(57.7%, 9.9%, 9.9%)"); // face down
             rect(this.x, this.y, this.width, this.height, 5); 
         } else {
-            fill("#aaa");
+            fill("#aaa"); // face up
             rect(this.x, this.y, this.width, this.height, 5); 
         }
     }
