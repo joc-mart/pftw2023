@@ -25,7 +25,7 @@ function preload() {
 }
 
 function setup () {
-    bg = loadImage("images/savannah.jpg"); // has to refresh to load
+    bg = loadImage("images/savannah.jpg");
     createCanvas(1000, 598);
     let selectedFaces = [];
     for (let z = 0; z < 4; z++) {
