@@ -1,0 +1,18 @@
+new subject: vue
+
+lodash utility library
+ 
+we will be doing single page applications
+make user interfaces using other ppls code
+package manager: npm
+    - adds a library to their website
+
+vue 3
+- vuejs.org/guide/introduction
+- API preference: options for now
+- cdnjs.com/libraries/vue
+- paste library into head and my script in the bottom of the body
+-vue.createApp(//config-here).mount("#")
+- can put logic into html (if statements)
+- breaking down webpage into components min 35 ish
+- headless?
