@@ -10,5 +10,5 @@ createApp({
             
         }
     }
-}).mount("#llamas"); // #llamas is html element
+}).mount("#llamaFacts"); // #llamas is html element
 
