@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="llamas">
+        <h1>Llama Fun Facts</h1>
+        <p>{{llamaPoop}}</p>
+        <p>{{llamaFood}}</p>
+        <p>A group of llamas is called a {{group}}.</p>
+        <p v-if="domesticated">They are a domesticated livestock species.</p>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
