@@ -17,3 +17,4 @@ createApp({
     }
 }).mount("#llamaFacts"); // #llamas is html element
 
+// facts sourced from https://racinezoo.org/llama-fact-sheet and https://www.britannica.com/animal/llama
