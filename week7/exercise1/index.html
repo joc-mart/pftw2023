@@ -11,43 +11,42 @@
 </head>
 <body>
     <div id="myApp" v-cloak>
+    <!-- attribute binding v-bind:attribute -->
     <h1 v-bind:style="pageHeader">Llamas vs Alpacas</h1>
-     
+        <div v-bind:style="flexContainer">
+            <ul v-bind:style="listStyle">
+                <h3 v-bind:style="itemStyle">llamas</h3>
+                <li v-bind:style="itemStyle">{{llamaFact1}}</li>
+                <li v-bind:style="itemStyle">{{llamaFact2}}</li>
+                <li v-bind:style="itemStyle">{{llamaFact3}}</li>
+                <li v-bind:style="itemStyle">{{llamaFact4}}</li>
+                <li v-bind:style="itemStyle">{{llamaFact5}}</li>
+            </ul>
+            <ul v-bind:style="listStyle">
+                <h3 v-bind:style="itemStyle">both</h3>
+                <li v-bind:style="itemStyle">{{bothFact1}}</li>
+                <li v-bind:style="itemStyle">{{bothFact2}}</li>
+                <li v-bind:style="itemStyle">{{bothFact3}}</li>
+                <li v-bind:style="itemStyle">{{bothFact4}}</li>
+                <li v-bind:style="itemStyle">{{bothFact5}}</li>
+            </ul>
+            <ul v-bind:style="listStyle">
+                <h3 v-bind:style="itemStyle">alpacas</h3>
+                <li v-bind:style="itemStyle">{{alpacaFact1}}</li>
+                <li v-bind:style="itemStyle">{{alpacaFact2}}</li>
+                <li v-bind:style="itemStyle">{{alpacaFact3}}</li>
+                <li v-bind:style="itemStyle">{{alpacaFact4}}</li>
+                <li v-bind:style="itemStyle">{{alpacaFact5}}</li>
+            </ul>
+        </div>
+
         <nav>
             <ul>
-        <!-- attribute binding v-bind:attribute -->
-                <li v-bind:class="{active: currentRoute==='home'}"><a href="#">home</a></li>
-                
-                <li><a v-bind:class="{active: currentRoute==='llama'}" v-bind:title="llamaTitle" v-bind:href="llamaLink">llama wiki</a></li>
+                <li><a v-bind:class="{active: currentRoute==='llamaWiki'}" v-bind:title="llamaTitle" v-bind:href="llamaLink">llama wiki</a></li>
 
-                <li><a v-bind:class="{active: currentRoute==='alpaca'}" v-bind:title="alpacaTitle" v-bind:href="alpacaLink">alpaca wiki</a></li>
+                <li><a v-bind:class="{active: currentRoute==='alpacaWiki'}" v-bind:title="alpacaTitle" v-bind:href="alpacaLink">alpaca wiki</a></li>
             </ul>
         </nav>
-
-        <ul v-bind:style="listStyle">
-            <h3 v-bind:style="itemStyle">llamas</h3>
-            <li v-bind:style="itemStyle">{{llamaFact1}}</li>
-            <li v-bind:style="itemStyle">{{llamaFact2}}</li>
-            <li v-bind:style="itemStyle">{{llamaFact3}}</li>
-            <li v-bind:style="itemStyle">{{llamaFact4}}</li>
-            <li v-bind:style="itemStyle">{{llamaFact5}}</li>
-        </ul>
-        <ul v-bind:style="listStyle">
-            <h3 v-bind:style="itemStyle">both</h3>
-            <li v-bind:style="itemStyle">{{bothFact1}}</li>
-            <li v-bind:style="itemStyle">{{bothFact2}}</li>
-            <li v-bind:style="itemStyle">{{bothFact3}}</li>
-            <li v-bind:style="itemStyle">{{bothFact4}}</li>
-            <li v-bind:style="itemStyle">{{bothFact5}}</li>
-        </ul>
-        <ul v-bind:style="listStyle">
-            <h3 v-bind:style="itemStyle">alpacas</h3>
-            <li v-bind:style="itemStyle">{{alpacaFact1}}</li>
-            <li v-bind:style="itemStyle">{{alpacaFact2}}</li>
-            <li v-bind:style="itemStyle">{{alpacaFact3}}</li>
-            <li v-bind:style="itemStyle">{{alpacaFact4}}</li>
-            <li v-bind:style="itemStyle">{{alpacaFact5}}</li>
-        </ul>
     </div>
     <script src="script.js"></script>
 </body>
