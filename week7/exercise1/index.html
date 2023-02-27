@@ -5,9 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>Exercise 7.1</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Llamas v Alpacas</title>
 </head>
 <body>
+    <div id="myApp" v-cloak>
+    <h1 v-bind:style="pageHeader">Llamas vs Alpacas</h1>
+     
+        <nav>
+            <ul>
+        <!-- attribute binding v-bind:attribute -->
+                <li v-bind:class="{active: currentRoute==='home'}"><a href="#">home</a></li>
+                
+                <li><a v-bind:class="{active: currentRoute==='llama'}" v-bind:title="llamaTitle" v-bind:href="llamaLink">llama wiki</a></li>
+
+                <li><a v-bind:class="{active: currentRoute==='alpaca'}" v-bind:title="alpacaTitle" v-bind:href="alpacaLink">alpaca wiki</a></li>
+            </ul>
+        </nav>
+
+        <ul v-bind:style="listStyle">
+            <h3 v-bind:style="itemStyle">llamas</h3>
+            <li v-bind:style="itemStyle">{{llamaFact1}}</li>
+            <li v-bind:style="itemStyle">{{llamaFact2}}</li>
+            <li v-bind:style="itemStyle">{{llamaFact3}}</li>
+            <li v-bind:style="itemStyle">{{llamaFact4}}</li>
+            <li v-bind:style="itemStyle">{{llamaFact5}}</li>
+        </ul>
+        <ul v-bind:style="listStyle">
+            <h3 v-bind:style="itemStyle">both</h3>
+            <li v-bind:style="itemStyle">{{bothFact1}}</li>
+            <li v-bind:style="itemStyle">{{bothFact2}}</li>
+            <li v-bind:style="itemStyle">{{bothFact3}}</li>
+            <li v-bind:style="itemStyle">{{bothFact4}}</li>
+            <li v-bind:style="itemStyle">{{bothFact5}}</li>
+        </ul>
+        <ul v-bind:style="listStyle">
+            <h3 v-bind:style="itemStyle">alpacas</h3>
+            <li v-bind:style="itemStyle">{{alpacaFact1}}</li>
+            <li v-bind:style="itemStyle">{{alpacaFact2}}</li>
+            <li v-bind:style="itemStyle">{{alpacaFact3}}</li>
+            <li v-bind:style="itemStyle">{{alpacaFact4}}</li>
+            <li v-bind:style="itemStyle">{{alpacaFact5}}</li>
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
