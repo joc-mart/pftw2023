@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class = "section" id="myApp">
+        <div class="container" v-cloak>
+            <!-- <h1 class="title is-1">Week 7</h1>
+            <ul>
+                <li v-for="name in names" v-bind:class="{
+                    'red-background': name==='Yoshi'
+                }">{{name}}</li>
+            </ul> -->
+           
+            <!-- <div v-for="(thing, key) in car">{{key}}:{{thing}}</div> -->
+            
+            <table class="table">
+                <thead>
+                    <th>type</th>
+                    <th>breed</th>
+                    <th>color</th>
+                </thead>
+                <tbody>
+                    <tr v-for="critter in pets">
+                        <td>{{critter.type}}</td>
+                        <td>{{critter.breed}}</td>
+                        <td>{{critter.color}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="class.js"></script>
+</body>
+</html>
