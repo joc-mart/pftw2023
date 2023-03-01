@@ -30,3 +30,7 @@ html {
 .even {
   background: #ffbaed;
 }
+.bold {
+  font-weight: bold;
+  color: #7d2abd;
+}

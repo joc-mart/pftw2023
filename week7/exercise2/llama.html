@@ -19,9 +19,8 @@
     
     <div class="rank-container" v-for="(critter, index) in llamas" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
       <span class="rank-item">{{critter.rank}}</span>
-      <span class="rank-item">{{critter.name}}</span>
+      <span class="rank-item" v-bind:class="{'bold': critter.name.toLowerCase().includes('llama')}">{{critter.name}}</span>
     </div>
-
   </div> 
 
   <script src="llamas.js"></script>

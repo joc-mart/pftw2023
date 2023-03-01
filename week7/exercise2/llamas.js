@@ -24,14 +24,3 @@ Vue.createApp({
   }
 }).mount("#llama-list");
 
-
-const word = "#llama-list".includes("llama");
-console.log(word);
-let result = word.toLowerCase();
-
-if (word) {
-  console.log("yay");
-  fontStyle = "bold";
-} else {
-  console.log("boo");
-}

@@ -55,6 +55,10 @@ createApp({
     // is lo-dash an example of a framework or a library? it is a library
 
 // exercise 
-
+    // happy to walk us through the includes
 
 // QUESTION: CAN YOU GO OVER INCLUDES()
+
+// two types of includes
+    // array and string
+    // 
