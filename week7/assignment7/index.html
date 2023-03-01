@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Show and Tell</title>
 </head>
 <body>
+    <section class = "section" id="myApp">
+        <div class="container" v-cloak>
+            <h2>Card Games</h2>
+            <table class="table">
+                <thead>
+                    <th>Name</th>
+                    <th>Description of Game</th>
+                    <th>Number of players</th>
+                    <th>Year Start</th>
+                    <th>Origin</th>
+                </thead>
+                <tbody>
+                    <tr v-for="game in cardGames">
+                        <td>{{game.name}}</td>
+                        <td>{{game.description}}</td>
+                        <td>{{game.players}}</td>
+                        <td>{{game.year}}</td>
+                        <td>{{game.origin}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
