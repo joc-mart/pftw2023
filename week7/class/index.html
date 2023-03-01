@@ -26,7 +26,9 @@
                     <th>color</th>
                 </thead>
                 <tbody>
-                    <tr v-for="critter in pets">
+                    <tr v-for="critter in pets"
+                    v-bind:class="{'dog': critter.type.toLowerCase().includes('d'),}"> 
+                    <!-- anything that includes d gets whatever you applied to the v-bind:class -->
                         <td>{{critter.type}}</td>
                         <td>{{critter.breed}}</td>
                         <td>{{critter.color}}</td>

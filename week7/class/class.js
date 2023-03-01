@@ -42,4 +42,19 @@ createApp({
     }
 }).mount("#myApp");
 
-// modulo %
+// modulo % means remainder
+
+// assignment 7
+    // like the pets
+    // use table
+    // will build on it next assignment
+
+// quiz
+    // v-cloak
+    // v-for
+    // is lo-dash an example of a framework or a library? it is a library
+
+// exercise 
+
+
+// QUESTION: CAN YOU GO OVER INCLUDES()
