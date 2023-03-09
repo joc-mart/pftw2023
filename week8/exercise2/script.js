@@ -10,22 +10,21 @@ createApp ({
         }
     },
     methods: {
-        calculate: (num1, num2) => {
+        calculate (num1, num2) {
             // switch is an if statement, pass specific values to check against
-            switch (operation) {
+            switch (this.operation) {
                 case 'add':
-                    total = num1 + num2;
+                    this.total = num1 + num2;
                     break;
                 case 'subtract':
-                    total = num1 - num2;
+                    this.total = num1 - num2;
                     break;
                 case 'multiply':
-                    total = num1 * num2;
+                    this.total = num1 * num2;
                     break;
                 case 'divide':
-                    total = num1 / num2;
+                    this.total = num1 / num2;
                     break;
-                
                 default:
                     window.alert('unexpected operator');
                     break;
