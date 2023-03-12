@@ -57,8 +57,26 @@ createApp({
         submitHandler() {
             console.log("submitted");
             this.albums = this.albums.concat(newAlbumObj);
+            newConsoleObj ();
+            this.resetForm();
             
-        }
+        },
+        resetForm() {
+            this.newConsoleObj = {
+                name: "",
+                artist: "",
+                year: null,
+                genre: "", 
+                cover: "",
+                collected: false,
+            };
+        },
+        // deleteItem: item() {
+        //     this.consoles = this.consoles.filter(console() {
+        //         return console !== item;
+        //     )};
+        // }
+
     }
 
 }).mount("#myApp");
