@@ -70,12 +70,11 @@ createApp({
                 collected: false,
             };
         },
-        deleteItem: (album) {
-            this.albums = this.albums.filter(albums() {
-                return arrayAlbum.name !== album.name;
+        deleteItem: (albums) {
+            this.albums = this.albums.filter(arrayAlbums() {
+                return arrayAlbums.name !== albums.name;
             })
         }
-
     }
 
 }).mount("#myApp");
