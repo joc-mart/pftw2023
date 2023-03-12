@@ -55,14 +55,13 @@ createApp({
 
     methods: {
         submitHandler() {
-            console.log("submitted");
-            this.albums = this.albums.concat(newAlbumObj);
-            newConsoleObj ();
+            console.log('submitted');
+            this.albums = this.albums.concat(this.newAlbumObj);
             this.resetForm();
             
         },
         resetForm() {
-            this.newConsoleObj = {
+            this.newAlbumObj = {
                 name: "",
                 artist: "",
                 year: null,
@@ -71,11 +70,11 @@ createApp({
                 collected: false,
             };
         },
-        // deleteItem: item() {
-        //     this.consoles = this.consoles.filter(console() {
-        //         return console !== item;
-        //     )};
-        // }
+        deleteItem: (album) {
+            this.albums = this.albums.filter(albums() {
+                return arrayAlbum.name !== album.name;
+            })
+        }
 
     }
 
