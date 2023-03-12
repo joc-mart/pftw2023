@@ -2,7 +2,7 @@ const { createApp } = Vue;
 createApp({
     data () {
         return {
-            newAlbumObj: {
+            newAlbum: {
                 name: "",
                 artist: "",
                 year: null,
@@ -54,26 +54,26 @@ createApp({
     },
     methods: {
         submitHandler() {
-            console.log('submitted');
-            this.albums = this.albums.concat(this.newAlbumObj);
+            console.log("submitted");
+            this.albums = this.albums.concat(this.newAlbum);
             this.resetForm();
             
         },
         resetForm() {
-            this.newAlbumObj = {
+            this.newAlbum = {
                 name: "",
                 artist: "",
                 year: null,
                 genre: "", 
                 cover: "",
                 collected: false,
-            };
+            }
         },
-        // deleteItem: (albums) {
-        //     this.albums = this.albums.filter(arrayAlbums => {
-        //         return arrayAlbums.name !== albums.name;
-        //     })
-        // }
+        deleteItem (album) {
+            this.albums = this.albums.filter(arrayAlbum => {
+                return arrayAlbum !== album;
+            })
+        }
     }
 
 }).mount("#myApp");

@@ -20,6 +20,7 @@
                     <th>Genre</th>
                     <th>Album Cover</th>
                     <th>Collected?</th>
+                    <th>Actions</th>
                 </thead>
                 <tbody>
                     <tr v-for="(album, index) in albums" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
@@ -31,6 +32,9 @@
                             <img v-bind:src="album.cover">
                         </td>
                         <td>{{album.collected}}</td>
+                        <td>
+                            <button type="button" v-on:click="deleteItem(album)">Delete</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -40,45 +44,33 @@
             <fieldset>
                 <legend>Add a game to the collection</legend>
                 <div>
-                    <label for="name">
-                        Album Name
-                    </label>
-                    <input id="name" type="text" v-model="newAlbumObj.name">
+                    <label for="name">Album Name</label>
+                    <input id="name" type="text" v-model="newAlbum.name">
                 </div>
 
                 <div>
-                    <label for="artist-name">
-                        Artist
-                    </label>
-                    <input id="artist-name" type="text" v-model="newAlbumObj.artist">
+                    <label for="artist-name">Artist</label>
+                    <input id="artist-name" type="text" v-model="newAlbum.artist">
                 </div>
 
                 <div>
-                    <label for="year">
-                        Year Released
-                    </label>
-                    <input id="year" type="text" v-model="newAlbumObj.year">
+                    <label for="year">Year Released</label>
+                    <input id="year" type="text" v-model="newAlbum.year">
                 </div>
 
                 <div>
-                    <label for="genre">
-                        Genre
-                    </label>
-                    <input id="genre" type="text" v-model="newAlbumObj.genre">
+                    <label for="genre">Genre</label>
+                    <input id="genre" type="text" v-model="newAlbum.genre">
                 </div>
 
                 <div>
-                    <label for="cover">
-                        Album Cover
-                    </label>
-                    <input id="cover" type="text" v-model="newAlbumObj.cover">
+                    <label for="cover">Album Cover</label>
+                    <input id="cover" type="text" v-model="newAlbum.cover">
                 </div>
 
                 <div>
-                    <label for="owned">
-                        Owned
-                    </label>
-                    <input id="owned" type="checkbox" v-model="newAlbumObj.collected">
+                    <label for="owned">Owned</label>
+                    <input id="owned" type="checkbox" v-model="newAlbum.collected">
                 </div>
                 <button type="submit">Submit</button>
             </fieldset>
