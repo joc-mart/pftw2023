@@ -52,7 +52,6 @@ createApp({
         }
 
     },
-
     methods: {
         submitHandler() {
             console.log('submitted');
@@ -71,7 +70,7 @@ createApp({
             };
         },
         deleteItem: (albums) {
-            this.albums = this.albums.filter(arrayAlbums() {
+            this.albums = this.albums.filter(arrayAlbums => {
                 return arrayAlbums.name !== albums.name;
             })
         }
