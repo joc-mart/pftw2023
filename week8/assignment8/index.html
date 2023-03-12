@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Show and Tell</title>
+</head>
+<body>
+    <section class = "section" id="myApp">
+        <div class="container" v-cloak>
+            <h2>CD Collection</h2>
+            <table class="table">
+                <thead>
+                    <th>Album Name</th>
+                    <th>Artist</th>
+                    <th>Year Released</th>
+                    <th>Genre</th>
+                    <th>Album Cover</th>
+                    <th>Collected?</th>
+                </thead>
+                <tbody>
+                    <tr v-for="(album, index) in albums" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
+                        <td>{{album.name}}</td>
+                        <td id="artist">{{album.artist}}</td>
+                        <td>{{album.year}}</td>
+                        <td>{{album.genre}}</td>
+                        <td>
+                            <img v-bind:src="album.cover">
+                        </td>
+                        <td>{{album.collected}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <form v-on:submit.prevent="submitHandler">
+            <fieldset>
+                <legend>Add a game to the collection</legend>
+                <div>
+                    <label for="name">
+                        Album Name
+                    </label>
+                    <input id="name" type="text" v-model="newAlbumObj.name">
+                </div>
+
+                <div>
+                    <label for="artist-name">
+                        Artist
+                    </label>
+                    <input id="artist-name" type="text" v-model="newAlbumObj.artist">
+                </div>
+
+                <div>
+                    <label for="year">
+                        Year Released
+                    </label>
+                    <input id="year" type="text" v-model="newAlbumObj.year">
+                </div>
+
+                <div>
+                    <label for="genre">
+                        Genre
+                    </label>
+                    <input id="genre" type="text" v-model="newAlbumObj.genre">
+                </div>
+
+                <div>
+                    <label for="cover">
+                        Album Cover
+                    </label>
+                    <input id="cover" type="text" v-model="newAlbumObj.cover">
+                </div>
+
+                <div>
+                    <label for="owned">
+                        Owned
+                    </label>
+                    <input id="owned" type="checkbox" v-model="newAlbumObj.collected">
+                </div>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+   
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
