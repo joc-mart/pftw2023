@@ -69,11 +69,11 @@ createApp({
                 collected: false,
             };
         },
-        deleteItem: (albums) {
-            this.albums = this.albums.filter(arrayAlbums => {
-                return arrayAlbums.name !== albums.name;
-            })
-        }
+        // deleteItem: (albums) {
+        //     this.albums = this.albums.filter(arrayAlbums => {
+        //         return arrayAlbums.name !== albums.name;
+        //     })
+        // }
     }
 
 }).mount("#myApp");
