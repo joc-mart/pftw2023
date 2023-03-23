@@ -13,11 +13,11 @@ createApp({
       city: "Minneapolis",
       state: "Minnesota",
       postalCode: "55404"
-    },
-    computed: {
-      fullAdress() {
-        return this.streetAddress + " " + this.state + " " + this.postalCode
-      }
     }
+  },
+  computed: {
+      fullAddress() {
+        return this.streetAddress + " " + this.city + " " + this.state + " " + this.postalCode
+      }
   }
 }).mount("#app");
