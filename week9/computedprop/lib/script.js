@@ -17,6 +17,7 @@ createApp({
   },
   computed: {
       fullAddress() {
+        console.log("firing fullAddress");
         return this.streetAddress + " " + this.city + " " + this.state + " " + this.postalCode
       }
   }
