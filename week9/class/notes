@@ -1,0 +1,32 @@
+Node / vue
+// make sure node is installed
+// toggle on composition
+
+// npm init vue@latest
+// why the \ ?
+    // if theres a space \ /
+// view > terminal
+// npm install within vscode terminal
+// what is a dependency?
+// typescript
+
+
+./ means in the same folder
+./App.vue 
+    html, script, and css are in one app.vue file
+    (template is html)
+
+[vite] = library to complile stuff together
+
+// works the same way its just all on one page (so whats the point?)
+    // "convenient" bc dont go back and forth
+
+...
+
+// props
+    // use as object
+    // min 42 set up props
+    // can be more than one props
+    
+// create a link to image from last week into array
+// 
