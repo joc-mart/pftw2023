@@ -50,7 +50,6 @@ createApp({
                 
             ]
         }
-
     },
     methods: {
         submitHandler() {
