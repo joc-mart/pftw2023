@@ -19,12 +19,33 @@
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/ddb/Alpaca_%2831562329701%29.jpg/440px-Alpaca_%2831562329701%29jpg"
     },
   ]
-
 </script>
 
 <template>
-  <div>
-    <p v-for="animal in camelids" v-bind:key="animal.commonName">{{animal.commonName}}</p>
+  <div v-cloak>
+    <h2>Camelids</h2>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Binomial Name</th>
+        <th>Order</th>
+        <th>Family</th>
+        <th>Genus</th>
+        <th>Species</th>
+        <th>Model</th>
+      </thead>
+      <tbody>
+        <tr v-for="animal in camelids" v-bind:key="animal.commonName">
+          <td>{{animal.commonName}}</td>
+          <td>{{animal.binomialName}}</td>
+          <td>{{animal.order}}</td>
+          <td>{{animal.family}}</td>
+          <td>{{animal.genus}}</td>
+          <td>{{animal.species}}</td>
+          <td>{{animal.image}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
