@@ -42,7 +42,10 @@
           <td>{{animal.family}}</td>
           <td>{{animal.genus}}</td>
           <td>{{animal.species}}</td>
-          <td>{{animal.image}}</td>
+          <td>future img here</td>
+          <td>
+            <button type="button" v-on:click="deleteItem(camelids)">Delete</button>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -50,4 +53,41 @@
 </template>
 
 <style scoped>
+html {
+    background-color: #b0b9ff;
+}
+* {
+    font-family: 'Sen', sans-serif;
+}
+h2 {
+    text-align: center;
+    font-weight: 800;
+}
+.table {
+    text-align: center;
+    width: 100%;
+    padding: 0 3rem 3rem;
+}
+td {
+    background-color: white;
+    padding: .5rem;
+    border: 1px dotted black;
+}
+.even td{
+    background-color: #beebab;
+}
+img {
+    max-width: 100px;
+}
+button {
+    background-color: #ffb0b9;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+button:hover {
+    cursor: pointer;
+}
 </style>
