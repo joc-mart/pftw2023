@@ -48,80 +48,99 @@ const newAlbum = {
 
 const state = reactive({albums: albums, newAlbum: newAlbum});
 // const stae = reactive({albums, newAlbum}); shortened version
+
+function submitHandler() {
+    state.albums.push ({
+      name: state.newAlbum.name,
+      artist: state.newAlbum.artist,
+      year: state.newAlbum.year,
+      genre: state.newAlbum.genre, 
+      cover: state.newAlbum.cover,
+      collected: state.newAlbum.collected,
+    });
+  state.newAlbum.name = "";
+  state.newAlbum.artist = "";
+  state.newAlbum.year = "";
+  state.newAlbum.genre = "";
+  state.newAlbum.cover = "";
+  state.newAlbum.collected = false;
+  
+};
+
 </script>
 
 <template>
   <div class="app-wrapper">
     <div class="container" v-cloak>
-            <h2>CD Collection</h2>
-            <table class="table">
-                <thead>
-                    <th>Album Name</th>
-                    <th>Artist</th>
-                    <th>Year Released</th>
-                    <th>Genre</th>
-                    <th>Album Cover</th>
-                    <th>Collected?</th>
-                    <th>Actions</th>
-                </thead>
-                <tbody>
-                    <tr v-for="(album, index) in state.albums" v-bind:key="index" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
-                        <td>{{album.name}}</td>
-                        <td id="artist">{{album.artist}}</td>
-                        <td>{{album.year}}</td>
-                        <td>{{album.genre}}</td>
-                        <td><img v-bind:src="album.cover"></td>
-                        <td>{{album.collected}}</td>
-                        <td>
-                            <button type="button" v-on:click="deleteItem(album)">Delete</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <h2>CD Collection</h2>
+      <table class="table">
+          <thead>
+              <th>Album Name</th>
+              <th>Artist</th>
+              <th>Year Released</th>
+              <th>Genre</th>
+              <th>Album Cover</th>
+              <th>Collected?</th>
+              <th>Actions</th>
+          </thead>
+          <tbody>
+              <tr v-for="(album, index) in state.albums" v-bind:key="index" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
+                  <td>{{album.name}}</td>
+                  <td id="artist">{{album.artist}}</td>
+                  <td>{{album.year}}</td>
+                  <td>{{album.genre}}</td>
+                  <td><img v-bind:src="album.cover"></td>
+                  <td>{{album.collected}}</td>
+                  <td>
+                      <button type="button" v-on:click="deleteItem(album)">Delete</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
         
-        <form v-on:submit.prevent="submitHandler" class="new-album">
-            <fieldset>
-                <legend>Add a game to the collection</legend>
-                <div>
-                    <label for="name">Album Name</label>
-                    <input id="name" type="text" v-model="newAlbum.name">
-                </div>
+    <form v-on:submit.prevent="submitHandler" class="new-album">
+      <fieldset>
+        <legend>Add a game to the collection</legend>
+        <div>
+            <label for="name">Album Name</label>
+            <input id="name" type="text" v-model="newAlbum.name">
+        </div>
 
-                <div>
-                    <label for="artist-name">Artist</label>
-                    <input id="artist-name" type="text" v-model="newAlbum.artist">
-                </div>
+        <div>
+            <label for="artist-name">Artist</label>
+            <input id="artist-name" type="text" v-model="newAlbum.artist">
+        </div>
 
-                <div>
-                    <label for="year">Year Released</label>
-                    <input id="year" type="date" v-model="newAlbum.year">
-                </div>
+        <div>
+            <label for="year">Year Released</label>
+            <input id="year" type="date" v-model="newAlbum.year">
+        </div>
 
-                <div>
-                    <label for="genre">Genre</label>
-                    <input id="genre" type="text" v-model="newAlbum.genre">
-                </div>
+        <div>
+            <label for="genre">Genre</label>
+            <input id="genre" type="text" v-model="newAlbum.genre">
+        </div>
 
-                <div>
-                    <label for="cover">Album Cover</label>
-                    <input id="cover" type="text" v-model="newAlbum.cover">
-                </div>
+        <div>
+            <label for="cover">Album Cover</label>
+            <input id="cover" type="text" v-model="newAlbum.cover">
+        </div>
 
-                <div>
-                    <label for="owned">Owned</label>
-                    <input id="owned" type="checkbox" v-model="newAlbum.collected">
-                </div>
-                <button type="submit">Submit</button>
-            </fieldset>
-        </form>
+        <div>
+            <label for="owned">Owned</label>
+            <input id="owned" type="checkbox" v-model="newAlbum.collected">
+        </div>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
   </div>
 </template>
 
 <style scoped>
-  html {
+  /* html {
     background-color: #b0b9ff;
-  }
+  } */
   * {
     font-family: 'Sen', sans-serif;
   }
