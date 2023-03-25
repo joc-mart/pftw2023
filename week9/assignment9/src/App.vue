@@ -45,6 +45,7 @@ const newAlbum = {
   cover: "",
   collected: false,
 };
+
 const state = reactive({albums: albums, newAlbum: newAlbum});
 // const stae = reactive({albums, newAlbum}); shortened version
 </script>
@@ -78,6 +79,7 @@ const state = reactive({albums: albums, newAlbum: newAlbum});
                 </tbody>
             </table>
         </div>
+        
         <form v-on:submit.prevent="submitHandler" class="new-album">
             <fieldset>
                 <legend>Add a game to the collection</legend>
