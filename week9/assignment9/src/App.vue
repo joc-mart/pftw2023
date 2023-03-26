@@ -71,6 +71,7 @@ function submitHandler() {
   state.newAlbum.cover = "";
   state.newAlbum.collected = false;
 };
+// need help with delete function
 function handleDelete(delteAlbum) {
   state.albums = state.albums.filter((albumToCheck) => {
     return deleteAlbum !== albumtoCheck;
@@ -149,9 +150,6 @@ function handleDelete(delteAlbum) {
 </template>
 
 <style scoped>
-  /* html {
-    background-color: #b0b9ff;
-  } */
   * {
     font-family: 'Sen', sans-serif;
   }
