@@ -7,35 +7,40 @@ const albums = [
   year: 2015,
   genre: "Indie", 
   cover: "https://upload.wikimedia.org/wikipedia/en/e/ec/Sufjan_Stevens_-_Carrie_%26_Lowell.jpg",
-  collected: true},
+  collected: true,
+  id: 1},
 
   {name: "Growing Pains",
   artist: "Sammy Copley",
   year: 2021,
   genre: "Pop", 
   cover: "https://i.scdn.co/image/ab67616d0000b273c2c5fc762fa24d14ef29011f",
-  collected: false},
+  collected: false,
+  id: 2},
 
   {name: "Heart-Shaped Leaves",
   artist: "Super Saturated Sugar Strings",
   year: 2014,
   genre: "Folk", 
   cover: "https://f4.bcbits.com/img/a2003727927_10.jpg",
-  collected: true},
+  collected: true,
+  id: 3},
 
   {name: "All Their Many Miles",
   artist: "Super Saturated Sugar Strings",
   year: 2018,
   genre: "Folk", 
   cover: "https://f4.bcbits.com/img/a2178237143_10.jpg",
-  collected: true},
+  collected: true,
+  id: 4},
 
   {name: "The New Abnormal",
   artist: "The Strokes",
   year: 2020,
   genre: "Indie Rock", 
   cover: "https://upload.wikimedia.org/wikipedia/en/f/f8/The_Strokes_-_The_New_Abnormal.png",
-  collected: false},                
+  collected: false,
+  id: 5},                
 ];
 const newAlbum = {
   name: "",
@@ -50,23 +55,25 @@ const state = reactive({albums: albums, newAlbum: newAlbum});
 // const stae = reactive({albums, newAlbum}); shortened version
 
 function submitHandler() {
-    state.albums.push ({
-      name: state.newAlbum.name,
-      artist: state.newAlbum.artist,
-      year: state.newAlbum.year,
-      genre: state.newAlbum.genre, 
-      cover: state.newAlbum.cover,
-      collected: state.newAlbum.collected,
-    });
+  state.albums.push ({
+    name: state.newAlbum.name,
+    artist: state.newAlbum.artist,
+    year: state.newAlbum.year,
+    genre: state.newAlbum.genre, 
+    cover: state.newAlbum.cover,
+    collected: state.newAlbum.collected,
+    id: state.albums.length + 1,
+  });
   state.newAlbum.name = "";
   state.newAlbum.artist = "";
   state.newAlbum.year = "";
   state.newAlbum.genre = "";
   state.newAlbum.cover = "";
   state.newAlbum.collected = false;
-  
 };
-
+function handleDelete(album) {
+  console.log(album.id);
+}
 </script>
 
 <template>
@@ -84,7 +91,9 @@ function submitHandler() {
               <th>Actions</th>
           </thead>
           <tbody>
-              <tr v-for="(album, index) in state.albums" v-bind:key="index" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
+              <tr v-for="(album, index) in state.albums" v-bind:key="index" 
+              v-on:delete-album="handleDelete"
+              v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
                   <td>{{album.name}}</td>
                   <td id="artist">{{album.artist}}</td>
                   <td>{{album.year}}</td>
@@ -92,7 +101,7 @@ function submitHandler() {
                   <td><img v-bind:src="album.cover"></td>
                   <td>{{album.collected}}</td>
                   <td>
-                      <button type="button" v-on:click="deleteItem(album)">Delete</button>
+                      <button type="button" v-on:click="$emit('deleteAlbum', album)">Delete</button>
                   </td>
               </tr>
           </tbody>
