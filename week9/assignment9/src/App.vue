@@ -52,7 +52,7 @@ const newAlbum = {
 };
 
 const state = reactive({albums: albums, newAlbum: newAlbum});
-// const stae = reactive({albums, newAlbum}); shortened version
+// const stae = reactive({albums, newAlbum}); is the shortened version
 
 function submitHandler() {
   state.albums.push ({
@@ -71,8 +71,10 @@ function submitHandler() {
   state.newAlbum.cover = "";
   state.newAlbum.collected = false;
 };
-function handleDelete(album) {
-  console.log(album.id);
+function handleDelete(delteAlbum) {
+  state.albums = state.albums.filter((albumToCheck) => {
+    return deleteAlbum !== albumtoCheck;
+  });
 }
 </script>
 
