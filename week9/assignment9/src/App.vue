@@ -1,5 +1,6 @@
 <script setup>
 import { reactive } from 'vue';
+import ItemRow from './components/ItemRow.vue';
 
 const albums = [
   {name: "Carrie & Lowell",
@@ -72,9 +73,10 @@ function submitHandler() {
   state.newAlbum.collected = false;
 };
 // need help with delete function
-function handleDelete(delteAlbum) {
-  state.albums = state.albums.filter((albumToCheck) => {
-    return deleteAlbum !== albumtoCheck;
+function handleDelete(itemToDelete) {
+  console.log(itemToDelete.id, itemToDelete.name);
+  state.albums = state.albums.filter((itemToCheck) => {
+    return itemToDelete !== itemToCheck;
   });
 }
 </script>
@@ -94,19 +96,12 @@ function handleDelete(delteAlbum) {
               <th>Actions</th>
           </thead>
           <tbody>
-              <tr v-for="(album, index) in state.albums" v-bind:key="index" 
-              v-on:delete-album="handleDelete"
-              v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !== 0}">
-                  <td>{{album.name}}</td>
-                  <td id="artist">{{album.artist}}</td>
-                  <td>{{album.year}}</td>
-                  <td>{{album.genre}}</td>
-                  <td><img v-bind:src="album.cover"></td>
-                  <td>{{album.collected}}</td>
-                  <td>
-                      <button type="button" v-on:click="$emit('deleteAlbum', album)">Delete</button>
-                  </td>
-              </tr>
+              <ItemRow 
+              v-for="(album, index) in state.albums"
+              v-bind:item="album"
+              v-bind:key="index"
+              v-bind:index="index"
+              v-on:delete-item="handleDelete"/>
           </tbody>
       </table>
     </div>
