@@ -72,7 +72,6 @@ function submitHandler() {
   state.newAlbum.cover = "";
   state.newAlbum.collected = false;
 };
-// need help with delete function
 function handleDelete(itemToDelete) {
   console.log(itemToDelete.id, itemToDelete.name);
   state.albums = state.albums.filter((itemToCheck) => {
