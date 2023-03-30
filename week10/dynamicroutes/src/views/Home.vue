@@ -15,17 +15,16 @@ console.log("Music List", MusicList);
 <style scoped>
     .song-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
     .song-list-item {
-        width: auto;
+        width: 10%;
         padding: 10px;
-        margin: 10px;
+        margin: 5px;
         border: 1px solid black;
         border-radius: 4px;
-        background: pink;
+        background: greenyellow;
     }
     .song-list-item a {
         color: black;
