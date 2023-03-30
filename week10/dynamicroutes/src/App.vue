@@ -12,4 +12,13 @@ import { RouterView, RouterLink } from "vue-router"
 </template>
 
 <style>
+  html {
+    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 </style>

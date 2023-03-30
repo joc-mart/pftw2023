@@ -32,6 +32,7 @@ console.log("Music List", MusicList);
     }
     .song-list-item:hover {
         background: black;
+        border: 1px solid pink;
     }
     .song-list-item:hover a {
         color: white;

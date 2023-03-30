@@ -22,13 +22,26 @@ const song = MusicList.find(song => {
 </template>
 
 <style scoped>
+    .song-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 30% 10% 30%;
+        padding: 0;
+    }
+    .song-detail img {
+        max-width: 20%;
+    }
     .song-detail.rising {
-        border: 1px solid green;
+        border: 6px solid green;
+        border-radius: 20px;
     }
     .song-detail.falling {
-        border: 1px solid red;
+        border: 6px solid red;
+        border-radius: 20px;
     }
     .song-detail.same {
-        border: 1px solid yellow;
+        border: 6px solid yellow;
+        border-radius: 20px;
     }
 </style>
