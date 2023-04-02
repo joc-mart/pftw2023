@@ -15,7 +15,7 @@
 <style scoped>
     .project-card {
         max-width: 200px;
-        border: 2px solid #333;
+        /* border: 2px solid #333; */
         border-radius: 8px;
         margin: 0 10px 10px 0;
 

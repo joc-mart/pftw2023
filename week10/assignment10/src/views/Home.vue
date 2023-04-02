@@ -14,10 +14,10 @@ console.log(ProjectCollection);
     <RouterLink :to="'/project/' + project.slug">{{project.name}}</RouterLink> -->
     <!-- <img :src="image" :alt="project.name">   -->
     <!-- </div> -->
-    <div>
+    <div class="card-container">
       <ProjectCard :key="project.id" 
       v-for="project in ProjectCollection" 
-      :id="project.num" 
+      :id="project.id" 
       :name="project.name" 
       :image="project.image" />
     </div>
@@ -32,7 +32,7 @@ console.log(ProjectCollection);
   img {
     width: 200px;
   }
-  .page-container {
+  /* .page-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,5 +44,15 @@ console.log(ProjectCollection);
     flex-direction: column;
     padding: .5rem;
     margin: 0;
+  } */
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5rem;
+    margin: 5% 20% 20% 20%;
   }
+
 </style>

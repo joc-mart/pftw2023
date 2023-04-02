@@ -1,25 +1,25 @@
 [
-    {   "num": 1,
+    {   "id": 1,
         "name": "Website Design",
         "image": "../src/assets/img/project1.png" },
     { 
-        "num": 2,
+        "id": 2,
         "name": "Package Design",
         "image": "../src/assets/img/project2.png" },
     { 
-        "num": 3,
+        "id": 3,
         "name": "Publication Design",
         "image": "../src/assets/img/project3.png" },
     { 
-        "num": 4,
+        "id": 4,
         "name": "Website Study",
         "image": "../src/assets/img/project4.png" },
     { 
-        "num": 5,
+        "id": 5,
         "name": "Animation",
         "image":  "../src/assets/img/project5.png" },
     { 
-        "num": 6,
+        "id": 6,
         "name": "Illustration",
-        "image": "../src/assets/img/project6.png" }
+        "image": "../src/assets/img/project63.png" }
 ]

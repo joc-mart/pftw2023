@@ -1,4 +1,13 @@
 <script>
+import { useRoute, RouterLink } from "vue-router"
+import ProjectCollection from "../data/project-collection.json"
+const route = useRoute();
+console.log("route param", route.params);
+const projectId = route.params.id;
+const projectDetails = ProjectCollection.find((project) => {
+    return projectId === project.id;
+})
+
 const image = new URL("../assets/img/project6.png", import.meta.url).href
 </script>
 
