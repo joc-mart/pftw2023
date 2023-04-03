@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <template>
@@ -7,8 +6,8 @@
         <h2>Editorial Illustration</h2>
         <p>This is a project for an Illustration Essentials course at Minneapolis College of Design in Spring 2022. We were asked to create an editorial illustration and a spot illustration for an article. Of the given options, I chose an article titled "Chasing London's Mysterious Flock of Feral Birds" by Nick Hunt.</p>
         <div class="images">
-            <img src="img/project6.png" alt="illustration" id="editorial"/>
-            <img src="img/project62.png" alt="illustration" id="spot" />
+            <!-- <img src="img/project6.png" alt="illustration" id="editorial"/> -->
+            <!-- <img src="img/project62.png" alt="illustration" id="spot" /> -->
         </div>
         
     </div>
