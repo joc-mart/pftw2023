@@ -20,7 +20,7 @@
             class="project-image" />
 
             <div>
-                <p>{{ projectDetails.desciption }}</p>
+                <!-- <p>{{ projectDetails.desciption }}</p> -->
             </div>
         </div>
     </div>
