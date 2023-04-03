@@ -5,7 +5,7 @@
     console.log("route param", route.params);
     const projectId = route.params.id;
     const projectDetails = ProjectCollection.find((project) => {
-        return String(projectId) === project.id;
+        return (projectId) === String(project.id);
     });
     console.log(projectDetails);
 
