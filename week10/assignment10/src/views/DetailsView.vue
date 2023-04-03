@@ -7,12 +7,13 @@
     const projectDetails = ProjectCollection.find((project) => {
         return projectId === project.id;
     });
+    console.log(projectDetails);
 </script>
 
 <template>
     <div class="page-container">
         <h2>hi</h2>
-        <!-- <div>
+        <div>
             <h2>{{ projectDetails.name }}</h2>
             <img :src="`/img/${projectDetails.image}`" 
             :alt="projectDetails.name"
@@ -21,7 +22,7 @@
             <div>
                 <p>{{ projectDetails.desciption }}</p>
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 

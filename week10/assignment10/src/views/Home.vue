@@ -2,9 +2,6 @@
 import { RouterLink } from "vue-router"
 import ProjectCollection from "../data/project-collection.json"
 import ProjectCard from "../components/ProjectCard.vue"
-
-const image = new URL("../assets/img/project6.png", import.meta.url).href
-
 console.log(ProjectCollection);
 </script>
 
@@ -17,7 +14,6 @@ console.log(ProjectCollection);
       :name="project.name" 
       :image="project.image" />
     </div>
-
   </div>
 </template>
 
