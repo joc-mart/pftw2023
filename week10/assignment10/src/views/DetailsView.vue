@@ -13,15 +13,14 @@
 
 <template>
     <div class="page-container">
-        <h2>hi</h2>
         <div>
             <h2>{{ projectDetails.name }}</h2>
             <img :src="`/img/${projectDetails.image}`" 
             :alt="projectDetails.name"
             class="project-image" />
 
-            <div>
-                <p>{{ projectDetails.desciption }}</p>
+            <div class="description">
+                <p>{{ projectDetails.description }}</p>
             </div>
         </div>
     </div>
@@ -29,16 +28,18 @@
 
 <style scoped>
     .page-container {
-        margin: 5% 20%;
+        margin: 5% 30%;
     }
     h2 {
         font-size: 3rem;
         font-weight: 800;
         text-align: center;
     }
-    .project-images {
-        display: flex;
-        margin-top: 2rem;
-        flex-wrap: wrap;
+    .project-image {
+        display: block;
+        max-width: 500px;
+        height: 100%;
+        margin: 0 auto 2rem auto;
+        padding: 0;
     }
 </style>
