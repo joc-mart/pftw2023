@@ -15,7 +15,7 @@
     <div class="page-container">
         <div>
             <h2>{{ projectDetails.name }}</h2>
-            <img :src="`assets/img/${projectDetails.image}`" 
+            <img :src="`/assets/img/${projectDetails.image}`" 
             :alt="projectDetails.name"
             class="project-image" />
 
