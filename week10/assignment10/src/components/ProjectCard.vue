@@ -7,7 +7,7 @@
     <div class="project-card">
         <img class="project-image" :src="`/img/${image}`" :alt="name">
         <div class="footer">
-            <RouterLink class="footer-link" :to="`/projects/${id}`">{{ name }}</RouterLink>
+            <RouterLink class="footer-link" :to="`/project/${id}`">{{ name }}</RouterLink>
         </div>
     </div>
 </template>
