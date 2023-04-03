@@ -14,14 +14,11 @@
 
 <style scoped>
     .project-card {
-        max-width: 200px;
-        /* border: 2px solid #333; */
-        border-radius: 8px;
-        margin: 0 10px 10px 0;
+        margin: 0 15px 15px 0;
 
     }
     .project-image {
-        max-width: 200px;
+        max-width: 250px;
         display: block;
         width: 100%;
     }
