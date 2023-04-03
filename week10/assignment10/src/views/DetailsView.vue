@@ -8,6 +8,7 @@
         return projectId === project.id;
     });
     console.log(projectDetails);
+
 </script>
 
 <template>
@@ -20,7 +21,7 @@
             class="project-image" />
 
             <div>
-                <!-- <p>{{ projectDetails.desciption }}</p> -->
+                <p>{{ projectDetails.desciption }}</p>
             </div>
         </div>
     </div>
