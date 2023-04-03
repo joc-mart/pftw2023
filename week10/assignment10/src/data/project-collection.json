@@ -1,25 +1,31 @@
 [
     {   "id": 1,
         "name": "Website Design",
-        "image": "../src/assets/img/project1.png" },
+        "image": "../src/assets/img/project1.png",
+        "description": "" },
     { 
         "id": 2,
         "name": "Package Design",
-        "image": "../src/assets/img/project2.png" },
+        "image": "../src/assets/img/project2.png",
+        "description": "" },
     { 
         "id": 3,
         "name": "Publication Design",
-        "image": "../src/assets/img/project3.png" },
+        "image": "../src/assets/img/project3.png",
+        "description": "" },
     { 
         "id": 4,
         "name": "Website Study",
-        "image": "../src/assets/img/project4.png" },
+        "image": "../src/assets/img/project4.png",
+        "description": "" },
     { 
         "id": 5,
         "name": "Animation",
-        "image":  "../src/assets/img/project5.png" },
+        "image":  "../src/assets/img/project5.png",
+        "description": "" },
     { 
         "id": 6,
-        "name": "Illustration",
-        "image": "../src/assets/img/project63.png" }
+        "name": "Editorial Illustration",
+        "image": "../src/assets/img/project63.png",
+        "description": "This is a project for an Illustration Essentials course at Minneapolis College of Design in Spring 2022. We were asked to create an editorial illustration and a spot illustration for an article. Of the given options, I chose an article titled 'Chasing London's Mysterious Flock of Feral Birds' by Nick Hunt." }
 ]
