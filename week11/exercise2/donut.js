@@ -10,8 +10,7 @@ function setup() {
 	ellipseColor = random(255);
 	squareColor = random(255);
     frameRate(6);
-
-} 
+}
 
 function draw() { 
   background(bgColor);
@@ -21,7 +20,6 @@ function draw() {
 	ellipse(random(200), random(200), random(200));
     ellipse(random(600), random(600), random(200, 600));
 	
-
 	fill(squareColor);
     noStroke();
 	rect(random(500), random(500), random(100), random(100));
@@ -35,16 +33,11 @@ function draw() {
     triangle(random(600), random(600), random(600), random(600), random(600), random(600));
     triangle(random(1000), random(1000), random(1000), random(1000), random(1000), random(1000));
 
-  
     if (mouseIsPressed) {
         bgColor = color(1, 59, 117);
 		ellipseColor = color(random(255), random(255), random(255));
 		squareColor = color(random(255), random(100, 255), random(200, 255));
-        triangleColor = color(random(255), random(255), random(200, 255), random(30,80));
-
-
-
-    
+        triangleColor = color(random(255), random(255), random(200, 255), random(30, 90));
   }
 }
 
