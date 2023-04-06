@@ -3,7 +3,6 @@ var r;
 var g;
 var b;
 var a;
-let color = ["#b3f72a", "#1eebe7", "#f73636", "#36e7f7"];
 frameCount = 3;
 
 function setup() {

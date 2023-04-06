@@ -2,6 +2,7 @@ let bgColor = 0;
 let ellipseColor = 0;
 let squareColor = 0;
 let triangleColor = 0;
+let pause = false;
 
 function setup() { 
   createCanvas(600, 600);
@@ -18,27 +19,42 @@ function draw() {
 	noStroke();
 	fill(ellipseColor);
 	ellipse(random(200), random(200), random(200));
-    ellipse(random(600), random(600), random(200));
+    ellipse(random(600), random(600), random(200, 600));
 	
-    noStroke();
+
 	fill(squareColor);
+    noStroke();
 	rect(random(500), random(500), random(100), random(100));
-    rect(random(600), random(600), random(100), random(100));
+    
+    noFill();
+    stroke(255, 255, 255);
+    rect(random(600), random(600), random(600), random(600));
 
     noStroke();
     fill(triangleColor);
     triangle(random(600), random(600), random(600), random(600), random(600), random(600));
+    triangle(random(1000), random(1000), random(1000), random(1000), random(1000), random(1000));
 
   
     if (mouseIsPressed) {
-    bgColor = color(random(255), random(100, 255), random(200, 255));
-		ellipseColor = color(random(255), random(100, 200), random(200, 255));
+        bgColor = color(1, 59, 117);
+		ellipseColor = color(random(255), random(255), random(255));
 		squareColor = color(random(255), random(100, 255), random(200, 255));
-        triangleColor = color(random(255), random(100, 200), random(200, 255));
-  }
+        triangleColor = color(random(255), random(255), random(200, 255), random(30,80));
+
+
+
     
+  }
 }
 
 function keyTyped () {
-    noLoop();
+    if(pause==false){
+        noLoop();
+        pause=true;
+      }else{
+        loop();
+        pause = false;
+      }
 }
+
