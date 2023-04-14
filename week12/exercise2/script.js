@@ -23,11 +23,8 @@ function draw() {
     background(0);
     var vol = amp.getLevel();
     var diam = map(vol, 0, .3, 10, 200);
-    // fill("#32a87d");
-    // ellipse(width / 2, height / 2, diam, diam);
+    // heart icon
     image(img, 0, 0, diam,  diam);
-    // ellipse(x, y, w, [h])
-    // image(img, x, y, width, height)
     img.loadPixels();
 }
 
@@ -39,5 +36,4 @@ function togglePlaying() {
         song.pause();
         button.html("play");
     }
-    
 }
