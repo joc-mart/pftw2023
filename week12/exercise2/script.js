@@ -1,8 +1,7 @@
 var song;
 var button;
 var amp;
-let r;
-let g;
+let img;
 
 function preload() {
     song = loadSound("assets/heart.mp3");
@@ -18,17 +17,18 @@ function setup() {
 
     // change size with volume
     amp = new p5.Amplitude();
-    // color = ("#32a87d", "#a83294");
-    // g = ("#32a87d");
-    // r = ("#a83294");
 }
 
 function draw() {
     background(0);
     var vol = amp.getLevel();
     var diam = map(vol, 0, .3, 10, 200);
-    fill("#32a87d");
-    ellipse(width / 2, height / 2, diam, diam);
+    // fill("#32a87d");
+    // ellipse(width / 2, height / 2, diam, diam);
+    image(img, 0, 0, diam,  diam);
+    // ellipse(x, y, w, [h])
+    // image(img, x, y, width, height)
+    img.loadPixels();
 }
 
 function togglePlaying() {
