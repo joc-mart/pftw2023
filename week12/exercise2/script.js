@@ -10,8 +10,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(300, 300);
-    background(255);
+    createCanvas(400, 400);
     
     // play/pause button
     button = createButton("play");
@@ -25,6 +24,7 @@ function setup() {
 }
 
 function draw() {
+    background(0);
     var vol = amp.getLevel();
     var diam = map(vol, 0, .3, 10, 200);
     fill("#32a87d");
