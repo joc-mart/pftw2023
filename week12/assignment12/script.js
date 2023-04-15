@@ -34,7 +34,7 @@ function setup() {
     button4.mousePressed(togglePlaying4);
     button4.style('background-color', "#1ac447");
 
-    button5 = createButton("sol");
+    button5 = createButton("so");
     button5.mousePressed(togglePlaying5);
     button5.style('background-color', "#4882e0");
 
