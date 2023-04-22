@@ -3,7 +3,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL)
     angleMode(DEGREES)
 
-    noLoop()
+    // noLoop()
 }
 
 function draw() {
@@ -33,16 +33,16 @@ function branch(len) {
             push()
 
             rotateZ(random(20, 50))
-            branch(len * 0.7)
+            branch(len * 0.65)
 
             pop() // prevent loop from affecting each other
         }
     } else {
-        var r = 180 + random(-20, 20)
-        var g = 120 + random(-20, 20)
-        var b = 40 + random(-20, 20)
-
-        fill(r, g, b, 200)
+        // var r = 180 + random(-100, 20)
+        // var g = 120 + random(-20, 20)
+        // var b = 40 + random(-20, 20)
+        var c = ("#b47828" || "#507828")
+        fill(c)
         noStroke()
         translate(5, 0, 0)
         rotateZ(90)
