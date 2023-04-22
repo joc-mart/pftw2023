@@ -15,7 +15,7 @@ function draw() {
 
     rotateY(frameCount)
 
-    branch(100)
+    branch(150)
 }
 
 function branch(len) {
