@@ -20,12 +20,9 @@ function branch(len) {
     if (len > 10) {
         for (var i = 0; i < 3; i++) {
             rotateY(random(100, 140)) // random is more realistic
-
             push()
-
             rotateZ(random(20, 50))
             branch(len * 0.65)
-
             pop() // prevent loop from affecting each other
         }
     } else {
