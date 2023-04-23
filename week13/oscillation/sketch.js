@@ -43,13 +43,6 @@ function draw() {
         rotate(x);
     }
 
-    // for (x = 0; x<= 360; x = x + 5) {
-    //     fill("#e359b2"); // pink
-    //     curve(0, 10, 10, 50, amplified, 10, amplified2, 10);
-    //     rotate(x);
-    // }
-
-
     pos = pos + slider.value();
     pos2 = pos2 + inc;
 
