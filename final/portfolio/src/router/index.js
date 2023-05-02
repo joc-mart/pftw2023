@@ -17,8 +17,13 @@ const router = createRouter({
       component: AboutView
     },
     {
-      path: '/case/:id',
-      name: 'case',
+      path: '/project/:id',
+      name: 'project',
+      component: CaseView
+    },
+    {
+      path: '/moreprojects/:id',
+      name: 'more',
       component: CaseView
     }
   ]

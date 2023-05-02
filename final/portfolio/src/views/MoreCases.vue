@@ -1,23 +1,22 @@
 <script setup>
-    import { useRoute, RouterLink } from "vue-router"
-    import ProjectCollection from "../data/project-collection.json"
+    import MoreProjects from "..data/more-projects.json"
     const route = useRoute();
-    const projectId = route.params.id;
-    const projectDetails = ProjectCollection.find((project) => {
-        return (projectId) === String(project.id);
+    const moreprojectsId = route.params.id;
+    const moreDetails = MoreProjects.find((moreprojects) => {
+        return (moreprojectsId) === String(moreprojects.id);
     });
 </script>
 
 <template>
     <div class="page-container">
         <div>
-            <h2>{{ projectDetails.name }}</h2>
-            <img :src="`./assets/img/${projectDetails.image}`" 
-            :alt="projectDetails.name"
+            <h2>{{ moreDetails.name }}</h2>
+            <img :src="`./assets/img/${moreDetails.image}`" 
+            :alt="moreDetails.name"
             class="project-image" />
 
             <div class="description">
-                <p>{{ projectDetails.description }}</p>
+                <p>{{ moreDetails.description }}</p>
             </div>
         </div>
     </div>

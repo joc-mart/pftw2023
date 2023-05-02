@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-<div>
+  <div>
     <nav>
       <div class="header">
         <RouterLink to="/">Jocelyn Martin</RouterLink>
@@ -19,9 +19,12 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style>
   html {
-    background-color: #F9F9ED;
+    background-color: #FFFEEE;
     font-family: 'Lexend Deca', sans-serif;
     color: black;
+  }
+  body {
+    margin: 0;
   }
   nav {
     display: flex;
