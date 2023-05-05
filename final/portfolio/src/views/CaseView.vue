@@ -11,14 +11,26 @@
 <template>
     <div class="page-container">
         <div>
-            <h2>{{ projectDetails.name }}</h2>
+            <h2>{{ projectDetails.title }}</h2>
             <img :src="`./assets/img/${projectDetails.image}`" 
-            :alt="projectDetails.name"
+            :alt="projectDetails.title"
             class="project-image" />
 
             <div class="description">
                 <p>{{ projectDetails.description }}</p>
             </div>
+            <div class="image-section">
+                <img :src="`./assets/img/${projectDetails.secondimage}`"
+                :alt="projectDetails.title"
+                class="project-image" />
+
+                <img :src="`./assets/img/${projectDetails.thirdimage}`"
+                :alt="projectDetails.title"
+                class="project-image" />
+            </div>
+            <section class="back">
+                <h3><RouterLink to="/">back to home</RouterLink></h3>
+            </section>
         </div>
     </div>
 </template>
@@ -32,11 +44,24 @@
         font-weight: 800;
         text-align: center;
     }
+    h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+    }
     .project-image {
         display: block;
-        max-width: 500px;
+        width: 500px;
         height: 100%;
         margin: 0 auto 2rem auto;
         padding: 0;
+    }
+    .back {
+        padding-top: 100px;
+    }
+    .image-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 </style>

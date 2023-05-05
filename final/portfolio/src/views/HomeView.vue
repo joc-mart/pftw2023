@@ -14,13 +14,16 @@ import MoreCard from "../components/MoreCard.vue"
         <div class="card-container">
         <ProjectCard :key="project.id" 
         v-for="project in ProjectCollection" 
-        :id="project.id" 
-        :name="project.name" 
+        :id="project.id"
+        :title="project.title" 
+        :name="project.name"
+        :date="project.date" 
         :image="project.image" />
         </div>
     </div>
     <div class="runner">
         <nav>
+            <p>SKILLS:</p>
             <p>UX DESIGN</p>
             <p>HTML</p>
             <p>CSS</p>
@@ -29,16 +32,20 @@ import MoreCard from "../components/MoreCard.vue"
             <p>PUBLICATION DESIGN</p>
         </nav>
     </div>
-    <h2>more projects</h2>
-    <div class="page-container">
-        <div class="card-container">
-        <MoreCard :key="moreprojects.id" 
-        v-for="moreprojects in MoreProjects" 
-        :id="moreprojects.id" 
-        :name="moreprojects.name" 
-        :image="moreprojects.image" />
+    <section class="section-more">
+        <h2>more projects</h2>
+        <div class="page-container">
+            <div class="card-container">
+            <MoreCard :key="moreprojects.id" 
+            v-for="moreprojects in MoreProjects" 
+            :id="moreprojects.id"
+            :title="moreprojects.title" 
+            :name="moreprojects.name" 
+            :date="moreprojects.date"
+            :image="moreprojects.image" />
+            </div>
         </div>
-    </div>
+    </section>
 </div>
 </template>
 
@@ -50,32 +57,33 @@ import MoreCard from "../components/MoreCard.vue"
     width: 200px;
   }
   .card-container {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: .5rem;
-    margin: 5% 20% 20% 20%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    margin: 40px 8px 60px 8px;
     padding: 0px;
   }
 
   .runner {
+      background-color: rgba(255,254,238,.3);
       border-width: 4px 0px 4px 0px;
-      border-color: black;
+      border-color: #1f1f1f;
       border-style: solid;
       font-weight: 600;
       margin: 0;
-      padding: 0;
+      padding: 0 2rem;
   }
-  .runner nav {
+  .runner nav { 
       padding: 1rem;
   }
-  /* section 2: more projects */
+
+  /* more projects */
+  .section-more {
+      /* background-color: #fffeee; */
+      margin: 0;
+      padding: 1rem;
+  }
   h2 {
       text-align: center;
       font-size: 4rem;
