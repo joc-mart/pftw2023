@@ -27,7 +27,11 @@ const router = createRouter({
       name: 'moreprojects',
       component: MoreCases
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return {top: 0}
+  }
 })
 
 export default router
+
