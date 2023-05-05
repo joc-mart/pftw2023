@@ -27,6 +27,10 @@
                 <img :src="`./assets/img/${moreDetails.thirdimage}`"
                 :alt="moreDetails.title"
                 class="project-image" />
+
+                <video>
+                    <source :src="`./assets/img/${moreDetails.video}`" type="video/mp4">
+                </video>
             </div>
             <section class="back">
                 <h3><RouterLink to="/">back to home</RouterLink></h3>
