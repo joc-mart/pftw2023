@@ -1,16 +1,29 @@
 [
     {   "id": 1,
-        "name": "Website Design",
-        "image": "project1.png",
-        "description": "During fall 2022, I took the class Web Design for my masters program at MCAD.  For the course project, I chose to redesign eBay for  for a younger audience- 18 to 25 year olds. I chose young adults because eBay largely does not appeal to them, even though buying and selling secondhand goods are popular activities among that age group. The expected user for eBay currently is over the age of 25. Sites such as depop and grailed provide similar services to eBay, however they are more popular among 18-25 year olds than eBay. There are major differences between eBay and these websites in the visual designs and user experience. In order to redesign eBay to appeal to young adults, I wanted to create a design that is trendy, un-cluttered, and easy to use." },
+        "name": "app/website design",
+        "title": "eBay redesign",
+        "date": "Fall 2022",
+        "image": "project12.png",
+        "secondimage": "ebaydesktop.png",
+        "thirdimage":"",
+        "description": "During fall 2022, I took the class Web Design for my masters program at MCAD.  For the course project, I chose to redesign eBay for  for a younger audience- 18 to 25 year olds. I chose young adults because eBay largely does not appeal to them, even though buying and selling secondhand goods are popular activities among that age group. The expected user for eBay currently is over the age of 25. Sites such as depop and grailed provide similar services to eBay, however they are more popular among 18-25 year olds than eBay. There are major differences between eBay and these websites in the visual designs and user experience. In order to redesign eBay to appeal to young adults, I wanted to create a design that is trendy, un-cluttered, and easy to use."},
+    
+    { 
+        "id": 8,
+        "name": "app design",
+        "title": "MedTracker",
+        "date": "Spring 2023",
+        "image": "project7.png",
+        "secondimage": "schedulemockup.png",
+        "thirdimage": "addmed.png",
+        "description": "It is difficult for some people to not only remember what medications they are on or prescriptions that they have, but also their function is and when to take them. MedTracker is an app that keeps track of current prescriptions, reminders, and prescription history to use as a reference when needed." },
+    
     { 
         "id": 2,
-        "name": "Package Design",
-        "image": "project2.png",
-        "description": "With all the menstrual products in the marketplace, many brands still use gender exclusive language and visuals, such as colors and words that exclude trans men and others under the gender diverse umbrella. For this project, I designed a brand identity including logo, packaging, and manual for gender inclusive menstrual products (tampons). To execute a visual identity that is successfully gender inclusive, I needed to consider all the elements of design that could imply gender such as color, typography, and imagery. The brand is named Mond, which is German for moon, to emphasize menstruation as a natural cycle" },
-    { 
-        "id": 3,
-        "name": "Publication Design",
-        "image": "project3.png",
-        "description": "Cozy is a magazine dedicated to relaxing video games and gaming related content. I completed this project as part of a Typography course at Minneapolis College of Art and Design. We were asked to create a fictional magazine of our choosing including the cover, table of contents, an article spread, one page style guide, and mockup image. There are a number of gaming magazines in existence, but they mainly feature genres like first person shooter and cater to a mostly male audience. I wanted to create a magazine that features genres such as adventure, puzzles, simulation, and role-playing games with an aesthetic that is more relaxing and cheerful than the typical violence-centered gamer magazine." }
+        "name": "app design",
+        "title": "Bookbuddy",
+        "date": "Spring 2021",
+        "image": "project8.png",
+        "secondimage": "bookmockup.png",
+        "description": "I created the app Bookbuddy for User Experience Design, a class I attended at Cuyahoga Community College Spring 2021. Bookbuddy is a social media book app prototype inspired by combining the functionality of Goodreads, Facebook, and Twitter. App prototype is available to view upon request." }
 ]

@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import CaseView from '../views/CaseView.vue'
+import MoreCases from '../views/MoreCases.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -23,8 +24,8 @@ const router = createRouter({
     },
     {
       path: '/moreprojects/:id',
-      name: 'more',
-      component: CaseView
+      name: 'moreprojects',
+      component: MoreCases
     }
   ]
 })
