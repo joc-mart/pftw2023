@@ -28,10 +28,12 @@
                 :alt="moreDetails.title"
                 class="project-image" />
 
-                <video width="400">
+                
+                <!-- <video width="500">
                     <source :src="`./assets/img/${moreDetails.video}`" type="video/mp4">
-                </video>
+                </video> -->
             </div>
+            <a href="{{moreDetails.link}}">View the Full Project</a>
             <section class="back">
                 <h3><RouterLink to="/">back to home</RouterLink></h3>
             </section>
