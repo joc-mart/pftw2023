@@ -28,7 +28,7 @@
                 :alt="moreDetails.title"
                 class="project-image" />
 
-                <video>
+                <video width="400">
                     <source :src="`./assets/img/${moreDetails.video}`" type="video/mp4">
                 </video>
             </div>
