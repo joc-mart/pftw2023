@@ -28,6 +28,9 @@
                 :alt="projectDetails.title"
                 class="project-image" />
             </div>
+            
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="560" height="315" :src="`${projectDetails.link}`" allowfullscreen></iframe>
+
             <section class="back">
                 <h3><RouterLink to="/">back to home</RouterLink></h3>
             </section>

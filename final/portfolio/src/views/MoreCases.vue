@@ -27,13 +27,10 @@
                 <img :src="`./assets/img/${moreDetails.thirdimage}`"
                 :alt="moreDetails.title"
                 class="project-image" />
-
-                
-                <!-- <video width="500">
-                    <source :src="`./assets/img/${moreDetails.video}`" type="video/mp4">
-                </video> -->
             </div>
-            <a href="{{moreDetails.link}}">View the Full Project</a>
+            
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" :src="`${moreDetails.link}`" allowfullscreen></iframe>
+
             <section class="back">
                 <h3><RouterLink to="/">back to home</RouterLink></h3>
             </section>
