@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <div>
     <nav>
       <div class="header">
-        <RouterLink to="/">Jocelyn Martin</RouterLink>
+        <img src="../public/assets/img/jmlogo.png"> <RouterLink to="/">Jocelyn Martin</RouterLink>
       </div>
       <div>
         <RouterLink to="/">Portfolio</RouterLink>
@@ -14,14 +14,24 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </nav>
     <RouterView />
+    <footer>
+      <nav>
+          <p>created by Jocelyn Martin</p>
+          <p>martinfjocelyn@gmail.com</p>
+      </nav>
+  </footer>
   </div>
+  
 </template>
 
 <style>
   html {
+    background-image: url("../public/assets/img/hero.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
     background-color: #FFFEEE;
     font-family: 'Lexend Deca', sans-serif;
-    color: black;
+    color: #1f1f1f;
   }
   body {
     margin: 0;
@@ -32,16 +42,28 @@ import { RouterLink, RouterView } from 'vue-router'
     padding: 2rem;
   }
   a {
-    color: black;
+    color: #1f1f1f;
     text-decoration: none;
     padding: 1rem;
   }
-  a:hover {
+  /* a:hover {
     border: 1px solid black;
-  }
+  } */
   .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     font-weight: 600;
     font-size: 1.5rem;
+  }
+  img {
+    width: 100px;
+    padding: 0;
+  }
+  footer {
+    /* background-color: #fffeee; */
+    padding: 4rem 0 0 0;
+    font-size: .8rem;
   }
 
 </style>
