@@ -29,7 +29,7 @@
                 class="project-image" />
             </div>
             
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" :src="`${moreDetails.link}`" allowfullscreen></iframe>
+            <iframe v-if="moreDetails.id === 7" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" :src="`${moreDetails.link}`" allowfullscreen></iframe>
 
             <section class="back">
                 <h3><RouterLink to="/">back to home</RouterLink></h3>

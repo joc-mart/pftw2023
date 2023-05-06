@@ -8,7 +8,7 @@
         "secondimage": "",
         "description": "In the course Web Development, we were asked to use the atomic design system to study a website of our choice. I created a website for the case study of the chosen website's components and recreated the website using HTML and CSS. The website I chose to study and recreate was the website for the National Museum of Mexican Art." },
     { 
-        "id": 3,
+        "id": 5,
         "name": "publication design",
         "title": "Cozy",
         "date": "Spring 2022",
@@ -17,7 +17,7 @@
         "description": "Cozy is a magazine dedicated to relaxing video games and gaming related content. I completed this project as part of a Typography course at Minneapolis College of Art and Design. We were asked to create a fictional magazine of our choosing including the cover, table of contents, an article spread, one page style guide, and mockup image. There are a number of gaming magazines in existence, but they mainly feature genres like first person shooter and cater to a mostly male audience. I wanted to create a magazine that features genres such as adventure, puzzles, simulation, and role-playing games with an aesthetic that is more relaxing and cheerful than the typical violence-centered gamer magazine." },
 
     { 
-        "id": 5,
+        "id": 6,
         "name": "package design",
         "title": "Mond",
         "date": "Summer 2022",
@@ -25,7 +25,7 @@
         "secondimage": "",
         "description": "With all the menstrual products in the marketplace, many brands still use gender exclusive language and visuals, such as colors and words that exclude trans men and others under the gender diverse umbrella. For this project, I designed a brand identity including logo, packaging, and manual for gender inclusive menstrual products (tampons). To execute a visual identity that is successfully gender inclusive, I needed to consider all the elements of design that could imply gender such as color, typography, and imagery. The brand is named Mond, which is German for moon, to emphasize menstruation as a natural cycle" },
     { 
-        "id": 6,
+        "id": 7,
         "name": "animation",
         "title": "A Day in the Life",
         "date": "Fall 2022",
