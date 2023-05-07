@@ -29,13 +29,13 @@
             </div>
 
             <!-- Section 2 -->
-            <section v-if="projectDetails.id === 1">
+            <section v-if="projectDetails.id === 1 || projectDetails.id === 3">
                 <p>{{ projectDetails.section2 }}</p>
                 <img :src="`./assets/img/${projectDetails.thirdimage}`"
                 :alt="projectDetails.title"
                 class="project-image" />
             </section>
-            
+
             <!-- Section 3 -->
             <section v-if="projectDetails.id === 1 || projectDetails.id === 2">
                 <p> {{ projectDetails.section3 }} </p>
@@ -59,7 +59,7 @@
             </section>
             
             <!-- section 5 -->
-            <section v-if="projectDetails.id === 1 || projectDetails.id === 2">
+            <section>
                 <h4>{{ projectDetails.finalsection }}</h4>
                 <p> {{ projectDetails.section5 }} </p>
                 <iframe v-if="projectDetails.id === 1 || projectDetails.id === 2" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="560" height="315" :src="`${projectDetails.link}`" allowfullscreen></iframe>

@@ -38,9 +38,10 @@
         "name": "app design",
         "title": "Bookbuddy",
         "date": "Spring 2021",
-        "section1": "home and discover pages",
+        "section1": "discover and home pages",
+        "finalsection": "prototype walkthrough",
         "image": "project8.png",
-        "secondimage": "",
+        "secondimage": "bookbuddy2.png",
         "thirdimage": "bookmockup.png",
         "link": "",
         "description": "I created the app Bookbuddy for User Experience Design, a class I attended at Cuyahoga Community College Spring 2021. Bookbuddy is a social media book app prototype inspired by combining the functionality of Goodreads, Facebook, and Twitter. App prototype is available to view upon request." }
