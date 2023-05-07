@@ -39,8 +39,8 @@
 
             <!-- section 2 -->
             <section v-if="moreDetails.id === 4 || moreDetails.id === 6">
-                <h4>section 2</h4>
-                <div>
+                <h4>{{ moreDetails.section2 }}</h4>
+                <div class="image-section">
                     <img :src="`./assets/img/${moreDetails.fourthimage}`"
                     :alt="moreDetails.title"
                     class="project-image" />
@@ -52,7 +52,7 @@
             
             <!-- section 3 -->
             <section v-if="moreDetails.id === 4 || moreDetails.id === 5 || moreDetails.id === 6">
-                <h4>section 3</h4>
+                <h4>{{ moreDetails.section3 }}</h4>
                 <img :src="`./assets/img/${moreDetails.sixthimage}`"
                 :alt="moreDetails.title"
                 class="project-image" />
@@ -60,8 +60,8 @@
 
             <!-- section 4 -->
             <section v-if="moreDetails.id === 4 || moreDetails.id === 6">
-                <h4>section 4</h4>
-                <div>
+                <h4>{{ moreDetails.section4 }}</h4>
+                <div class="image-section">
                     <img :src="`./assets/img/${moreDetails.seventhimage}`"
                     :alt="moreDetails.title"
                     class="project-image" />
@@ -131,11 +131,18 @@
         font-weight: 800;
         text-align: center;
     }
+    h4 {
+        text-align: center;
+    }
     .project-image {
         display: block;
         width: 100%;
         margin: 0 auto 2rem auto;
         padding: 0;
+        align-self: flex-start;
+    }
+    .full-image {
+        width: 100%;
     }
     .back {
         padding-top: 100px;
