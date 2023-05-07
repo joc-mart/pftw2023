@@ -19,7 +19,16 @@
         "title": "Cozy",
         "date": "Spring 2022",
         "image": "project3.png",
-        "secondimage": "",
+        "sixthimage": "cozycover.png",
+        "ninthimage": "cozytoc.png",
+        "tenthimage": "cozyarticle.png",
+        "eleventhimage": "cozyarticle.png",
+        "twelfthimage": "cozyarticle.png",
+        "section3": "magazine cover",
+        "section5": "table of contents",
+        "section6": "first page of article spread",
+        "section7": "style guide",
+        "section8": "mockup",
         "description": "Cozy is a magazine dedicated to relaxing video games and gaming related content. I completed this project as part of a Typography course at Minneapolis College of Art and Design. We were asked to create a fictional magazine of our choosing including the cover, table of contents, an article spread, one page style guide, and mockup image. There are a number of gaming magazines in existence, but they mainly feature genres like first person shooter and cater to a mostly male audience. I wanted to create a magazine that features genres such as adventure, puzzles, simulation, and role-playing games with an aesthetic that is more relaxing and cheerful than the typical violence-centered gamer magazine." },
 
     { 
