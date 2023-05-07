@@ -29,13 +29,13 @@
             </div>
 
             <!-- Section 2 -->
-            <p v-if="projectDetails.id === 1">
-            {{ projectDetails.section2 }}
-            </p>
-            <img :src="`./assets/img/${projectDetails.thirdimage}`"
-            :alt="projectDetails.title"
-            class="project-image" />
-
+            <section v-if="projectDetails.id === 1">
+                <p>{{ projectDetails.section2 }}</p>
+                <img :src="`./assets/img/${projectDetails.thirdimage}`"
+                :alt="projectDetails.title"
+                class="project-image" />
+            </section>
+            
             <!-- Section 3 -->
             <section v-if="projectDetails.id === 1 || projectDetails.id === 2">
                 <p> {{ projectDetails.section3 }} </p>
