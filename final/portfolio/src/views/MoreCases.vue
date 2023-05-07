@@ -12,22 +12,96 @@
     <div class="page-container">
         <div>
             <h2>{{ moreDetails.title }}</h2>
-            <img :src="`./assets/img/${moreDetails.image}`" 
-            :alt="moreDetails.title"
-            class="project-image" />
-
             <div class="description">
-                <p>{{ moreDetails.description }}</p>
+                    <p>{{ moreDetails.description }}</p>
             </div>
-            <div class="image-section">
-                <img :src="`./assets/img/${moreDetails.secondimage}`"
-                :alt="moreDetails.title"
-                class="project-image" />
-
+            
+            <!-- section 1 -->
+            <section v-if="moreDetails.id === 6">
+                <div>
+                    <img :src="`./assets/img/${moreDetails.image}`" 
+                    :alt="moreDetails.title"
+                    class="project-image" />
+                    <p>one</p>
+                </div>
+                <div>
+                    <img :src="`./assets/img/${moreDetails.secondimage}`"
+                    :alt="moreDetails.title"
+                    class="project-image" />
+                    <p>one</p>
+                </div>
+                
                 <img :src="`./assets/img/${moreDetails.thirdimage}`"
                 :alt="moreDetails.title"
                 class="project-image" />
-            </div>
+                <p>one</p>
+            </section>
+
+            <!-- section 2 -->
+            <section v-if="moreDetails.id === 4 || moreDetails.id === 6">
+                <h4>section 2</h4>
+                <div>
+                    <img :src="`./assets/img/${moreDetails.fourthimage}`"
+                    :alt="moreDetails.title"
+                    class="project-image" />
+                    <img :src="`./assets/img/${moreDetails.fifthimage}`"
+                    :alt="moreDetails.title"
+                    class="project-image" />
+                </div>
+            </section>
+            
+            <!-- section 3 -->
+            <section v-if="moreDetails.id === 4 || moreDetails.id === 5 || moreDetails.id === 6">
+                <h4>section 3</h4>
+                <img :src="`./assets/img/${moreDetails.sixthimage}`"
+                :alt="moreDetails.title"
+                class="project-image" />
+            </section>
+
+            <!-- section 4 -->
+            <section v-if="moreDetails.id === 4 || moreDetails.id === 6">
+                <h4>section 4</h4>
+                <div>
+                    <img :src="`./assets/img/${moreDetails.seventhimage}`"
+                    :alt="moreDetails.title"
+                    class="project-image" />
+                    <img :src="`./assets/img/${moreDetails.eighthimage}`"
+                    :alt="moreDetails.title"
+                    class="project-image" />
+                </div>
+            </section>
+
+            <!-- section 5 -->
+            <section v-if="moreDetails.id === 5 || moreDetails.id === 6">
+                <h4>section5</h4>
+                <img :src="`./assets/img/${moreDetails.ninthimage}`"
+                :alt="moreDetails.title"
+                class="project-image" />
+            </section>
+
+            <!-- section 6 -->
+            <section v-if="moreDetails.id === 5">
+                <h4>section6</h4>
+                <img :src="`./assets/img/${moreDetails.tenthimage}`"
+                :alt="moreDetails.title"
+                class="project-image" />
+            </section>
+
+            <!-- section 7 -->
+            <section v-if="moreDetails.id === 5">
+                <h4>section7</h4>
+                <img :src="`./assets/img/${moreDetails.eleventhimage}`"
+                :alt="moreDetails.title"
+                class="project-image" />
+            </section>
+            
+            <!-- section 8 -->
+            <section v-if="moreDetails.id === 5">
+                <h4>section8</h4>
+                <img :src="`./assets/img/${moreDetails.twelfthimage}`"
+                :alt="moreDetails.title"
+                class="project-image" />
+            </section>
             
             <iframe v-if="moreDetails.id === 7" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" :src="`${moreDetails.link}`" allowfullscreen></iframe>
 
