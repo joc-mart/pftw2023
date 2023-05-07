@@ -29,7 +29,7 @@
             </div>
 
             <!-- Section 2 -->
-            <p v-if="projectDetails.id === 1">
+            <p v-if="projectDetails.id === 1 || projectDetails.id === 2">
             {{ projectDetails.section2 }}
             </p>
             <img :src="`./assets/img/${projectDetails.thirdimage}`"
@@ -37,7 +37,7 @@
             class="project-image" />
 
             <!-- Section 3 -->
-            <section v-if="projectDetails.id === 1 || projectDetails.id === 2">
+            <section v-if="projectDetails.id === 1">
                 <p> {{ projectDetails.section3 }} </p>
                 <div class="image-section">
                     <img :src="`./assets/img/${projectDetails.fourthimage}`" 
@@ -51,7 +51,7 @@
             </section>
 
             <!-- Section 4 -->
-            <section v-if="projectDetails.id === 1">
+            <section v-if="projectDetails.id === 1 || projectDetails.id === 2">
                 <p> {{ projectDetails.section4 }} </p>
                 <img :src="`./assets/img/${projectDetails.sixthimage}`"
                     :alt="projectDetails.title"
