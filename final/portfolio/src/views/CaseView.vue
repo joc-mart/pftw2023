@@ -11,25 +11,58 @@
 <template>
     <div class="page-container">
         <div>
+            <!-- section 1 -->
             <h2>{{ projectDetails.title }}</h2>
-            <img :src="`./assets/img/${projectDetails.image}`" 
-            :alt="projectDetails.title"
-            class="project-image" />
-
             <div class="description">
                 <p>{{ projectDetails.description }}</p>
             </div>
+            
+            <h4>{{ projectDetails.section1 }}</h4>
             <div class="image-section">
-                <img :src="`./assets/img/${projectDetails.secondimage}`"
+                <img :src="`./assets/img/${projectDetails.image}`" 
                 :alt="projectDetails.title"
                 class="project-image" />
 
-                <img :src="`./assets/img/${projectDetails.thirdimage}`"
+                <img :src="`./assets/img/${projectDetails.secondimage}`"
                 :alt="projectDetails.title"
                 class="project-image" />
             </div>
+
+            <!-- Section 2 -->
+            <p v-if="projectDetails.id === 1">
+            {{ projectDetails.section2 }}
+            </p>
+            <img :src="`./assets/img/${projectDetails.thirdimage}`"
+            :alt="projectDetails.title"
+            class="project-image" />
+
+            <!-- Section 3 -->
+            <section v-if="projectDetails.id === 1 || projectDetails.id === 2">
+                <p> {{ projectDetails.section3 }} </p>
+                <div class="image-section">
+                    <img :src="`./assets/img/${projectDetails.fourthimage}`" 
+                    :alt="projectDetails.title"
+                    class="project-image" />
+
+                    <img :src="`./assets/img/${projectDetails.fifthimage}`"
+                    :alt="projectDetails.title"
+                    class="project-image" />
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section v-if="projectDetails.id === 1">
+                <p> {{ projectDetails.section4 }} </p>
+                <img :src="`./assets/img/${projectDetails.sixthimage}`"
+                    :alt="projectDetails.title"
+                    class="project-image" />
+            </section>
             
-            <iframe v-if="projectDetails.id === 1 || projectDetails.id === 2" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="560" height="315" :src="`${projectDetails.link}`" allowfullscreen></iframe>
+            <!-- section 5 -->
+            <section v-if="projectDetails.id === 1 || projectDetails.id === 2">
+                <p> {{ projectDetails.section5 }} </p>
+                <iframe v-if="projectDetails.id === 1 || projectDetails.id === 2" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="560" height="315" :src="`${projectDetails.link}`" allowfullscreen></iframe>
+            </section>
 
             <section class="back">
                 <h3><RouterLink to="/">back to home</RouterLink></h3>
@@ -52,12 +85,18 @@
         font-weight: 800;
         text-align: center;
     }
+    h4 {
+        text-align: center;
+    }
     .project-image {
         display: block;
         width: 500px;
         height: 100%;
         margin: 0 auto 2rem auto;
         padding: 0;
+    }
+    p {
+        margin: 0;
     }
     .back {
         padding-top: 100px;
