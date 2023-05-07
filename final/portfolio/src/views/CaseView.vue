@@ -73,10 +73,12 @@
 
 <style scoped>
     .background {
-        background-color: #fffeee;
+        background-color: #1f1f1f;
+        padding: 2rem;
     }
     .page-container {
-        margin: 5% 30%;
+        margin: 5% 25%;
+        color: #fffeee;
     }
     h2 {
         font-size: 3rem;

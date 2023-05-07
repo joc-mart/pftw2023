@@ -9,8 +9,8 @@
 </script>
 
 <template>
-    <div class="page-container">
-        <div>
+    <div class="background">
+        <div class="page-container">
             <h2>{{ moreDetails.title }}</h2>
             <div class="description">
                     <p>{{ moreDetails.description }}</p>
@@ -113,8 +113,13 @@
 </template>
 
 <style scoped>
+    .background {
+        background-color: #1f1f1f;
+        padding: 2rem;
+    }
     .page-container {
         margin: 5% 30%;
+        color: #fffeee;
     }
     h2 {
         font-size: 3rem;
