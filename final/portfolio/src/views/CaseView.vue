@@ -30,6 +30,7 @@
 
             <!-- Section 2 -->
             <section v-if="projectDetails.id === 1 || projectDetails.id === 3">
+                <h4>{{ projectDetails.section2head }}</h4>
                 <p>{{ projectDetails.section2 }}</p>
                 <img :src="`./assets/img/${projectDetails.thirdimage}`"
                 :alt="projectDetails.title"
