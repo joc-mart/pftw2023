@@ -23,13 +23,14 @@
         "name": "app design",
         "title": "MedTrack",
         "date": "Spring 2023",
+        "newsection": "Below is a mood board of different color palettes and typography considered for the app. Being mindful of accessiblity, I wanted to explore options that have high contrast and legibility.",
+        "newsection2": "The final font family, Lexend Deca, and final color palette are approachable, pleasing, and legible.",
         "finalsection": "challenges",
         "section5": "One challenge was including as many features as is reasonable, but that left some of the interviewees' suggestions unused. For example, linking to mychart and chat with the user's doctor are features that I'm not sure would be possible to offer. Another challenge was in creating the “add new” page, I wanted to include all the necessary information, which proved complicated. After talking to my sister, she recommended I add questions that also feature on Epic systems, the software that many medical professionals use. I also think it would be beneficial for the form to be similar to the already existing form that medical professionals are familiar with. Unfortunately, I do not have access to Epic so I relied on what my sister said was important to ask.",
         "image": "project7.png",
         "secondimage": "schedulemockup.png",
-        "fourthimage": "medpalette.png",
-        "fifthimage": "medtype.png",
-        "section3": "Below on the left is a mood board of different color palettes and typography considered for the app. The final font family (Lexend Deca) and color pallete are approachable and pleasing with high contrast to ensure legibility",
+        "image1": "medpalette.png",
+        "image2": "medtype.png",
         "link":"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fulg3cUylp3K3qj2Z0AM7en%2FMedApp-(Cool)%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D239-695%26viewport%3D0%252C0%252C1%26scaling%3Dscale-down%26starting-point-node-id%3D239%253A695",
         "description": "It is difficult for some people to not only remember what medications they are on or prescriptions that they have, but also their function is and when to take them. MedTracker is an app that keeps track of current prescriptions, reminders, and prescription history to use as a reference when needed." },
     
@@ -45,5 +46,5 @@
         "secondimage": "bookbuddy2.png",
         "thirdimage": "bookmockup.png",
         "link": "https://www.youtube.com/embed/1V90zEurbrI",
-        "description": "I created the app Bookbuddy for User Experience Design, a class I attended at Cuyahoga Community College Spring 2021. Bookbuddy is a social media book app prototype inspired by combining the functionality of Goodreads, Facebook, and Twitter. App prototype is available to view upon request." }
+        "description": "I created the app Bookbuddy for User Experience Design, a class I attended at Cuyahoga Community College Spring 2021. Bookbuddy is a social media book app prototype inspired by combining the functionality of Goodreads, Facebook, and Twitter." }
 ]
