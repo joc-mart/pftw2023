@@ -9,8 +9,8 @@
 </script>
 
 <template>
-    <div class="page-container">
-        <div>
+    <div class="background">
+        <div class="page-container">
             <!-- section 1 -->
             <h2>{{ projectDetails.title }}</h2>
             <div class="description">
@@ -72,6 +72,9 @@
 </template>
 
 <style scoped>
+    .background {
+        background-color: #fffeee;
+    }
     .page-container {
         margin: 5% 30%;
     }

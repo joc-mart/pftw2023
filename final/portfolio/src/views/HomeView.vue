@@ -5,7 +5,6 @@ import ProjectCard from "../components/ProjectCard.vue"
 
 import MoreProjects from "../data/more-projects.json"
 import MoreCard from "../components/MoreCard.vue"
-// console.log(ProjectCollection);
 </script>
 
 <template>
@@ -24,12 +23,12 @@ import MoreCard from "../components/MoreCard.vue"
     <div class="runner">
         <nav>
             <p>SKILLS:</p>
-            <p>UX DESIGN</p>
+            <p>FIGMA</p>
             <p>HTML</p>
             <p>CSS</p>
-            <p>ILLUSTRATION</p>
-            <p>PACKAGE DESIGN</p>
-            <p>PUBLICATION DESIGN</p>
+            <p>ILLUSTRATOR</p>
+            <p>INDESIGN</p>
+            <p>PROCREATE</p>
         </nav>
     </div>
     <section class="section-more">
@@ -80,13 +79,14 @@ import MoreCard from "../components/MoreCard.vue"
 
   /* more projects */
   .section-more {
-      /* background-color: #fffeee; */
       margin: 0;
       padding: 1rem;
   }
   h2 {
       text-align: center;
-      font-size: 4rem;
+      font-size: 3rem;
+      color: #fffeee;
+      text-shadow: -4px 0 #1f1f1f, 0 4px #1f1f1f, 4px 0 #1f1f1f, 0 -4px #1f1f1f;
   }
 
 </style>

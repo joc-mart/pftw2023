@@ -25,15 +25,13 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
-  html {
+  body {
     background-image: url("../public/assets/img/hero.png");
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+    /* background-size: cover; */
+    background-repeat: round;
     background-color: #FFFEEE;
     font-family: 'Lexend Deca', sans-serif;
     color: #1f1f1f;
-  }
-  body {
     margin: 0;
   }
   nav {
