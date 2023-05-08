@@ -103,7 +103,9 @@
                 class="project-image" />
             </section>
             
-            <iframe v-if="moreDetails.id === 7" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" :src="`${moreDetails.link}`" allowfullscreen></iframe>
+            <section class="centered">
+                <iframe v-if="moreDetails.id === 7" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" :src="`${moreDetails.link}`" allowfullscreen></iframe>
+            </section>
 
             <section class="back">
                 <h3><RouterLink to="/">back to home</RouterLink></h3>
@@ -133,6 +135,7 @@
     }
     h4 {
         text-align: center;
+        padding-top: 2rem;
     }
     .project-image {
         display: block;
@@ -143,6 +146,10 @@
     }
     .full-image {
         width: 100%;
+    }
+    .centered {
+        display: flex;
+        justify-content: center;
     }
     .back {
         padding-top: 100px;
