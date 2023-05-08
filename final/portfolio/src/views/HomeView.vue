@@ -24,8 +24,8 @@ import MoreCard from "../components/MoreCard.vue"
         <nav>
             <p>SKILLS:</p>
             <p>FIGMA</p>
-            <p>HTML</p>
-            <p>CSS</p>
+            <p>HTML/CSS</p>
+            <p>XD</p>
             <p>ILLUSTRATOR</p>
             <p>INDESIGN</p>
             <p>PROCREATE</p>
