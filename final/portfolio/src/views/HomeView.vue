@@ -63,7 +63,6 @@ import MoreCard from "../components/MoreCard.vue"
     margin: 40px 8px 60px 8px;
     padding: 0px;
   }
-
   .runner {
       background-color: rgba(255,254,238,.3);
       border-width: 4px 0px 4px 0px;
@@ -88,5 +87,6 @@ import MoreCard from "../components/MoreCard.vue"
       color: #fffeee;
       text-shadow: -4px 0 #1f1f1f, 0 4px #1f1f1f, 4px 0 #1f1f1f, 0 -4px #1f1f1f;
   }
+
 
 </style>

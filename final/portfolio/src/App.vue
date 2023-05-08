@@ -44,9 +44,9 @@ import { RouterLink, RouterView } from 'vue-router'
     text-decoration: none;
     padding: 1rem;
   }
-  /* a:hover {
-    border: 1px solid black;
-  } */
+  a:hover {
+    color: #684DDB;
+  }
   .header {
     display: flex;
     flex-direction: row;
