@@ -122,6 +122,9 @@
     a {
         color: #fffeee;
     }
+    a:hover {
+    color: #684DDB;
+    }
     .project-image {
         display: block;
         width: 400px;

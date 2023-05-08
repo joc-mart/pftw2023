@@ -49,44 +49,42 @@ import MoreCard from "../components/MoreCard.vue"
 </template>
 
 <style scoped>
-  a {
-    text-align: center;
-  }
-  img {
-    width: 200px;
-  }
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 8px 60px 8px;
-    padding: 0px;
-  }
-  .runner {
-      background-color: rgba(255,254,238,.3);
-      border-width: 4px 0px 4px 0px;
-      border-color: #1f1f1f;
-      border-style: solid;
-      font-weight: 600;
-      margin: 0;
-      padding: 0 2rem;
-  }
-  .runner nav { 
-      padding: 1rem;
-  }
+    a {
+        text-align: center;
+    }
+    img {
+        width: 200px;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 8px 60px 8px;
+        padding: 0px;
+    }
+    .runner {
+        background-color: rgba(255,254,238,.3);
+        border-width: 4px 0px 4px 0px;
+        border-color: #1f1f1f;
+        border-style: solid;
+        font-weight: 600;
+        margin: 0;
+        padding: 0 2rem;
+    }
+    .runner nav { 
+        padding: 1rem;
+    }
 
-  /* more projects */
-  .section-more {
-      margin: 0;
-      padding: 1rem;
-  }
-  h2 {
-      text-align: center;
-      font-size: 3rem;
-      color: #fffeee;
-      text-shadow: -4px 0 #1f1f1f, 0 4px #1f1f1f, 4px 0 #1f1f1f, 0 -4px #1f1f1f;
-  }
-
-
+    /* more projects */
+    .section-more {
+        margin: 0;
+        padding: 1rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: #fffeee;
+        text-shadow: -4px 0 #1f1f1f, 0 4px #1f1f1f, 4px 0 #1f1f1f, 0 -4px #1f1f1f;
+    }
 </style>

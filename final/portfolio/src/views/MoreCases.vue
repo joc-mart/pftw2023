@@ -172,6 +172,9 @@
     a {
         color: #fffeee;
     }
+    a:hover {
+    color: #684DDB;
+    }
     .image-section {
         display: flex;
         flex-direction: row;
