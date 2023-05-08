@@ -19,22 +19,22 @@
             <!-- section 1 -->
             <section v-if="moreDetails.id === 6">
                 <div>
-                    <img :src="`./assets/img/${moreDetails.image}`" 
+                    <p>{{ moreDetails.section1 }}</p>
+                    <img :src="`./assets/img/${moreDetails.firstimage}`" 
                     :alt="moreDetails.title"
                     class="project-image" />
-                    <p>one</p>
                 </div>
                 <div>
+                    <p>{{ moreDetails.section12 }}</p>
                     <img :src="`./assets/img/${moreDetails.secondimage}`"
                     :alt="moreDetails.title"
                     class="project-image" />
-                    <p>one</p>
+                    
                 </div>
-                
                 <img :src="`./assets/img/${moreDetails.thirdimage}`"
                 :alt="moreDetails.title"
                 class="project-image" />
-                <p>one</p>
+                <p>{{ moreDetails.section13 }}</p>
             </section>
 
             <!-- section 2 -->
