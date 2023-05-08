@@ -22,19 +22,21 @@
                     <p>{{ moreDetails.section1 }}</p>
                     <img :src="`./assets/img/${moreDetails.firstimage}`" 
                     :alt="moreDetails.title"
-                    class="project-image" />
+                    class="logo-image" />
                 </div>
                 <div>
                     <p>{{ moreDetails.section12 }}</p>
                     <img :src="`./assets/img/${moreDetails.secondimage}`"
                     :alt="moreDetails.title"
-                    class="project-image" />
+                    class="logo-image" />
                     
                 </div>
+
+                <h4>{{ moreDetails.section14 }}</h4>
                 <img :src="`./assets/img/${moreDetails.thirdimage}`"
                 :alt="moreDetails.title"
                 class="project-image" />
-                <p>{{ moreDetails.section13 }}</p>
+                <p class="palette">{{ moreDetails.section13 }}</p>
             </section>
 
             <!-- section 2 -->
@@ -135,7 +137,7 @@
     }
     h4 {
         text-align: center;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
     .project-image {
         display: block;
@@ -143,6 +145,18 @@
         margin: 0 auto 2rem auto;
         padding: 0;
         align-self: flex-start;
+    }
+    .logo-image {
+        display: block;
+        margin: auto; 
+        margin-bottom: 4rem;
+        background-color: #fffeee;
+        width: 50%;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+    .palette {
+        text-align: center;
     }
     .full-image {
         width: 100%;
@@ -153,6 +167,10 @@
     }
     .back {
         padding-top: 100px;
+        
+    }
+    a {
+        color: #fffeee;
     }
     .image-section {
         display: flex;
